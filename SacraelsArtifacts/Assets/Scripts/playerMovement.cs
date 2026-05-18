@@ -1,18 +1,29 @@
 using UnityEngine;
-public class playerMovement : MonoBehaviour
+
+public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    private float horizontalInput;
+
     private Rigidbody2D rb;
 
-    private Vector1 movement;
+    private int Speed;
 
-    void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
+        horizontalInput = Input.GetAxis("Horizontal");
+
     }
+
+    private void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(horizontalInput * Speed, rb.linearVelocity.y);
+
+    }
+
 }
+
