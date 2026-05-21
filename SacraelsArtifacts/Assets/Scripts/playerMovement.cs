@@ -29,11 +29,11 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround) ;
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
-        //    rb.linearVelocity = new Vector2(rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
-    
+   
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
