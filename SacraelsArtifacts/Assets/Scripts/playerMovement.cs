@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+
+       
    
     }
 
