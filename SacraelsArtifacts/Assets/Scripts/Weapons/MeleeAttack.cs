@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class MeleeAttack : MonoBehaviour
 {
     public Transform attackPoint;
@@ -17,7 +16,7 @@ public class MeleeAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetButtonDown("Fire1"))
         {
             AttackFunction();
         }

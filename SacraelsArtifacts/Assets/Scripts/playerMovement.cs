@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 10f;
- 
+    [SerializeField] float speed;
+    public float currentSpeed;
+    public float jumpForce = 10f; 
+    [SerializeField] float dashSpeed;
     private Rigidbody2D rb;
     private float moveInput;
     private bool isOnGround;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentSpeed = speed;
     }
  
     void Update()
@@ -29,10 +31,15 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
+        //pulo
+
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isOnGround)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+
+        
+ 
 
        
    
