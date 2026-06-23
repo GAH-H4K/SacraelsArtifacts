@@ -61,10 +61,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
-    }
+    
 
 }
 
