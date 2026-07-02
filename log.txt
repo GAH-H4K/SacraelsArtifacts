@@ -1,0 +1,52 @@
+*   63ef1e4 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/GAH-H4K/SacraelsArtifacts
+|\  
+| * 690cc75 Inimigo Segue Player
+| * 2e3a890 commit pro visual
+| * 74c68dd particolas do claudioina
+| * f62e510 mudanças no codigo legais
+| * e721a44 Arrumei todos os erros top
+| * e4e94b0 commit
+| * f10d88b Enemy Follow Player
+| * 583dec8 teste box colider+musica
+| * b947f70 script de movimento do inimigo
+| * b0101c3 commit desnecessario
+| * c693355 Animation FIx
+| * 63c7916 Animation Goblink
+| * e648d40 Dash (inicio)
+| * 5b045a6 Commit Regular
+| * c713fe1 fumdo
+| * 91b7f26 coisas
+| * 803e07b Ataque
+| * 3648b3d pulo|| & Camera maneirona
+| * 98fcaaa pulo
+| * 3dc8b4d fmovimento
+| * bc7d182 movimento se mexe
+| * 6bb92fd n esquenta
+| * f5adfa9 Nada mais
+| * 1d3a9a2 Gravidez
+| * 06fea26 PrimeiroCommitSNE
+* | ac2c459 particolas do claudioina
+* | 09af34c mudanças no codigo legais
+* | 1dcbe22 Arrumei todos os erros top
+* | 5be60fd commit
+* | f9edbf9 Enemy Follow Player
+* | 1a76a3c teste box colider+musica
+* | 280a831 script de movimento do inimigo
+* | fac5a3c commit desnecessario
+* | 7aaecf6 Animation FIx
+* | d61d4e1 Animation Goblink
+* | ae128ca Dash (inicio)
+* | 822cbed Commit Regular
+* | f43e652 fumdo
+* | 1d84245 coisas
+* | e7416a2 Ataque
+* | 5d8b43d pulo|| & Camera maneirona
+* | b9cf94e pulo
+* | 20c56d7 fmovimento
+* | 88ae400 movimento se mexe
+* | 9d9c19b n esquenta
+* | cfe680b Nada mais
+* | 4131790 Gravidez
+* | 4e03456 golden shower é bom
+|/  
+* eb76f5e Initial commit
