@@ -12,8 +12,8 @@ public class EnemyAttack : MonoBehaviour
         // Verifica se o objeto que colidiu tem a tag "Player"
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Você colidiu com o inimigo seu viadinho!");
-            // Adicione aqui a lógica de dano ou destruição
+            Debug.Log("Você colidiu com o inimigo seu vacilão");
+            // gabrel do futuro adicione aqui a lógica de dano ou destruição
         }
     }
 
