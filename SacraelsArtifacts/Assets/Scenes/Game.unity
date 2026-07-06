@@ -5213,7 +5213,7 @@ SpriteRenderer:
   m_Size: {x: 0.51, y: 0.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &293059661
@@ -5326,7 +5326,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.3892245, y: 3.118904, z: -10}
+  m_LocalPosition: {x: -6.3369484, y: 8.425014, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5994,7 +5994,7 @@ Transform:
   m_GameObject: {fileID: 1612444069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4407754, y: -0.511096, z: -10}
+  m_LocalPosition: {x: 3.4930515, y: 4.7950134, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6015,7 +6015,7 @@ MonoBehaviour:
   CameraDistance: 10
   DeadZoneDepth: 0
   Composition:
-    ScreenPosition: {x: -0.05520042, y: -0.021845669}
+    ScreenPosition: {x: -0.074321, y: 0.19924223}
     DeadZone:
       Enabled: 0
       Size: {x: 0.13714291, y: 0}

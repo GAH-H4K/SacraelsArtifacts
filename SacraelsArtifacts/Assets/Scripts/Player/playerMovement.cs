@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0) 
 
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.y, 0f); 
 
             
         }
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         {
                 
-              rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+              rb.linearVelocity = new Vector2(rb.linearVelocity.y, jumpForce);
 
 
          }

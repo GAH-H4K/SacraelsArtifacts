@@ -15,6 +15,7 @@ public class EnemyFollow : MonoBehaviour
     {
         PlayerPosition = GameObject.FindGameObjectWithTag("Player").transform;
         
+        
     }
 
     void Update()
@@ -25,6 +26,7 @@ public class EnemyFollow : MonoBehaviour
     private void FollowPlayer()
     {
         transform.position = Vector2.MoveTowards(transform.position, PlayerPosition.position , EnemySpeed * Time.deltaTime);
+
     }
 
 }

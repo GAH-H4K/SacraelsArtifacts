@@ -1,6 +1,6 @@
 *   63ef1e4 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/GAH-H4K/SacraelsArtifacts
 |\  
-| * 690cc75 Inimigo Segue Player
+| * 690cc75 Inimigo Segue Player 
 | * 2e3a890 commit pro visual
 | * 74c68dd particolas do claudioina
 | * f62e510 mudanças no codigo legais
@@ -24,14 +24,14 @@
 | * 6bb92fd n esquenta
 | * f5adfa9 Nada mais
 | * 1d3a9a2 Gravidez
-| * 06fea26 PrimeiroCommitSNE
-* | ac2c459 particolas do claudioina
+| * 06fea26 PrimeiroCommitSNE // daqui para cima, manter
+* | ac2c459 particolas do claudioina // apagar ate aqui
 * | 09af34c mudanças no codigo legais
 * | 1dcbe22 Arrumei todos os erros top
 * | 5be60fd commit
 * | f9edbf9 Enemy Follow Player
 * | 1a76a3c teste box colider+musica
-* | 280a831 script de movimento do inimigo
+* | 280a831 script de movimento do inimigo           
 * | fac5a3c commit desnecessario
 * | 7aaecf6 Animation FIx
 * | d61d4e1 Animation Goblink
@@ -46,7 +46,7 @@
 * | 88ae400 movimento se mexe
 * | 9d9c19b n esquenta
 * | cfe680b Nada mais
-* | 4131790 Gravidez
-* | 4e03456 golden shower é bom
+* | 4131790 Gravidez 
+* | 4e03456 golden shower é bom // comecar a apagar daqui 
 |/  
 * eb76f5e Initial commit
