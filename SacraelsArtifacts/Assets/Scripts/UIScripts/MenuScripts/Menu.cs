@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
 
     private void GoToGameScene()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("CharacterSelection");
     }
 
     private void ExitGame()
