@@ -1,5 +1,7 @@
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,13 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isOnGround;
 
-  
-
-
-
+    private Animator animator;
  
     void Start()
-    {   
+    {
+        animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = speed;
     }
@@ -32,13 +32,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {      
         Jump();
-        //movimento horizontal
+     
         Move();
     }
 
     private void Move()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
+
+        animator.SetBool("IsRunning", moveInput != 0);
+
 
         rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
 

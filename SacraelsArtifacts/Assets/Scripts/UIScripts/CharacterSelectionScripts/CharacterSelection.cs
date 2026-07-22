@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class CharacterSelection : MonoBehaviour
 {
-     public GameObject[] backgrounds;   // As imagens dos personagens
-    public string[] characterNames;    // Nome de cada personagem
+     public GameObject[] backgrounds;   
+    public string[] characterNames;   
     public TMP_Text nameText;
 
     private int selectedCharacter = 0;
@@ -56,7 +56,8 @@ public class CharacterSelection : MonoBehaviour
 
     public void StartGame()
     {
-        PlayerPrefs.SetInt("SelectedCharacter", selectedCharacter);
+        PlayerPrefs.SetInt("Character", selectedCharacter);
+        PlayerPrefs.Save();
             SceneManager.LoadScene("Game");
     }
 }
