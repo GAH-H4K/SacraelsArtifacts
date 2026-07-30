@@ -5374,10 +5374,31 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2785545855181191931, guid: ee0d43fe94608004f9caa795340411ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 591928154}
     - targetCorrespondingSourceObject: {fileID: 4964287922635147179, guid: ee0d43fe94608004f9caa795340411ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1713162128}
   m_SourcePrefab: {fileID: 100100000, guid: ee0d43fe94608004f9caa795340411ff, type: 3}
+--- !u!1 &591928148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2785545855181191931, guid: ee0d43fe94608004f9caa795340411ff, type: 3}
+  m_PrefabInstance: {fileID: 491721319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &591928154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591928148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c90ca9bd32b35f6469bb1183bf1db8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::playerHealth
+  health: 5
 --- !u!1 &791674304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5672,6 +5693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   health: 50
+  knockbackForce: 5
 --- !u!114 &927458624
 MonoBehaviour:
   m_ObjectHideFlags: 0

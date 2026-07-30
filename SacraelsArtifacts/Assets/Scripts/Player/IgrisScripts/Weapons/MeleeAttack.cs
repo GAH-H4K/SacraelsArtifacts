@@ -11,7 +11,7 @@ public class MeleeAttack : MonoBehaviour
     
     public int attackDamage = 20;
     
-    public float knockbackForce = 5f;
+    
  
 
     void Update()
@@ -34,7 +34,7 @@ public class MeleeAttack : MonoBehaviour
     foreach (Collider2D enemy in hitEnemies)
      {
             Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
-         enemy.GetComponent<EnemyHealth>()?.TakeDamage(attackDamage, knockbackDirection, knockbackForce);
+         enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage, knockbackDirection);
      }
    }
 

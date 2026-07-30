@@ -2,18 +2,31 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Verifica se o objeto que colidiu tem a tag "Player"
+        
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Você colidiu com o inimigo seu vacilão");
-            // gabrel do futuro adicione aqui a lógica de dano ou destruição
+           
+            
+            playerHealth playerHealth = collision.gameObject.GetComponent<playerHealth>();
+            
+            if (playerHealth == null)
+            {
+                Debug.LogError("o script n ta no player dumbass");
+            }
+
+            if (playerHealth != null)
+            {
+                
+                
+                Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
+                float knockbackForce = 5f; 
+                playerHealth.TakeDamage(1, knockbackDirection, knockbackForce);
+            }
+
+           
         }
     }
 

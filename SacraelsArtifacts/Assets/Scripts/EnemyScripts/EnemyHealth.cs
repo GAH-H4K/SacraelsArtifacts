@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    [SerializeField] private float knockbackForce = 5f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -13,11 +15,13 @@ public class EnemyHealth : MonoBehaviour
 
 
 
-    public void TakeDamage(int damage, Vector2 knockbackDirection, float knockbackForce)
+    public void TakeDamage(int damage, Vector2 knockbackDirection)
     {
         health -= damage;
 
         rb.linearVelocity = Vector2.zero;
+
+        //Knockback maluco talvez desnecessário q eu provavelmente vou remover depois, ou por em outro inimigo, sla
 
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
