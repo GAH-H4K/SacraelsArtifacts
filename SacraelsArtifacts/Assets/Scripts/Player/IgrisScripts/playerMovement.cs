@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isOnGround;
 
+    private bool isJumping = false;
+
+    private bool isDashing = false;
+
     private Animator animator;
  
     void Start()
@@ -74,6 +78,14 @@ public class PlayerMovement : MonoBehaviour
 
          }
 
+    }
+
+    private void Dash()
+    {
+        if(Input.GetButtonDown("Dash") && isDashing == false && isJumping == false)
+        {
+            rb.linearVelocity = new Vector2(moveInput * dashSpeed, rb.linearVelocity.x);
+        }
     }
 
 
