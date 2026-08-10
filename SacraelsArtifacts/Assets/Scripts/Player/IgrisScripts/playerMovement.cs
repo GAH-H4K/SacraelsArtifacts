@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0) 
+        if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0.5f) 
 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.y, 0f); 

@@ -3,7 +3,9 @@ using UnityEngine;
 public class playerHealth : MonoBehaviour
 {
 
-     public int health = 5;
+     public int health;
+
+     public int _healthMax = 100;
      
      private bool isInvicible = false;
 
@@ -11,6 +13,7 @@ public class playerHealth : MonoBehaviour
     
     void Start()
     {
+        health = _healthMax;
        rb = GetComponent<Rigidbody2D>();
     }
 
