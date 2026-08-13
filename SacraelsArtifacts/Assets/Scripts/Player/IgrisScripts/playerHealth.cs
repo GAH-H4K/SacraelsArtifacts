@@ -10,7 +10,8 @@ public class playerHealth : MonoBehaviour
      private bool isInvicible = false;
 
      private Rigidbody2D rb;
-    
+
+   
     void Start()
     {
         health = _healthMax;

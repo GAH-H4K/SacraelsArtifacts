@@ -1,37 +1,35 @@
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 
 
 public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] float speed;
-
-    public float currentSpeed;
-
-    [SerializeField] float jumpForce = 10f; 
-
-    [SerializeField] float dashForce = 10f;
-
+    private float currentSpeed;
+    [SerializeField] float jumpForce = 20f; 
+    
+    [SerializeField] float dashForce = 20f;
     private float moveInput;
-
     private Rigidbody2D rb;
 
-    private bool isOnGround;
-
-    private bool isJumping = false;
-
+   
     private bool isDashing = false;
-
+    private bool isJumping = false;
     private Animator animator;
+    public Grounded ground;
  
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+
         rb = GetComponent<Rigidbody2D>();
+
         currentSpeed = speed;
+
+        ground = GetComponentInChildren<Grounded>();
+
     }
  
     void Update()
@@ -71,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
              rb.linearVelocity = new Vector2(rb.linearVelocity.y, 0f); 
         }
 
-        if(Input.GetButtonDown("Jump") && isOnGround)
+        if(Input.GetButtonDown("Jump") && ground.isGrounded)
 
         {
                 
@@ -85,29 +83,12 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Dash") && isDashing == false)
         {
             Debug.Log("a logica do dash");
+
+            isDashing = true;
+            currentSpeed = dashForce;
+            
         }
     }
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isOnGround = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if(collision.gameObject.CompareTag("Ground"))
-        {
-            isOnGround = false;
-        }
-    }
-
-   
-
-    
 
 }
 
