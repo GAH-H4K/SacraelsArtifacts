@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed;
     private float currentSpeed;
     [SerializeField] float jumpForce = 20f; 
+    [SerializeField] float minJumpHeight = 5f;
     
     [SerializeField] float dashForce = 20f;
     private float moveInput;
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0.5f) 
+        if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > minJumpHeight) 
 
         {
              rb.linearVelocity = new Vector2(rb.linearVelocity.y, 0f); 
@@ -82,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(Input.GetButtonDown("Dash") && isDashing == false)
         {
-            Debug.Log("a logica do dash");
+            Debug.Log("falta a logica do dash");
 
             isDashing = true;
             currentSpeed = dashForce;
