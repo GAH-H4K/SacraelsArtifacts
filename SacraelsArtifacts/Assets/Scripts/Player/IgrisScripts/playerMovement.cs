@@ -1,6 +1,7 @@
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -12,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float jumpForce = 10f; 
 
-    [SerializeField] float dashSpeed;
+    [SerializeField] float dashForce = 10f;
 
     private float moveInput;
 
@@ -38,6 +39,9 @@ public class PlayerMovement : MonoBehaviour
         Jump();
      
         Move();
+
+        Dash();
+    
     }
 
     private void Move()
@@ -64,9 +68,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0.5f) 
 
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.y, 0f); 
-
-            
+             rb.linearVelocity = new Vector2(rb.linearVelocity.y, 0f); 
         }
 
         if(Input.GetButtonDown("Jump") && isOnGround)
@@ -74,17 +76,15 @@ public class PlayerMovement : MonoBehaviour
         {
                 
               rb.linearVelocity = new Vector2(rb.linearVelocity.y, jumpForce);
-
-
-         }
+        }
 
     }
 
     private void Dash()
     {
-        if(Input.GetButtonDown("Dash") && isDashing == false && isJumping == false)
+        if(Input.GetButtonDown("Dash") && isDashing == false)
         {
-            rb.linearVelocity = new Vector2(moveInput * dashSpeed, rb.linearVelocity.x);
+            Debug.Log("a logica do dash");
         }
     }
 

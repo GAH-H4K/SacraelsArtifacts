@@ -3,9 +3,9 @@ using UnityEngine;
 public class playerHealth : MonoBehaviour
 {
 
-     public int health;
+    [SerializeField] public int health;
 
-     public int _healthMax = 100;
+    [SerializeField] public int _healthMax = 10;
      
      private bool isInvicible = false;
 
@@ -37,7 +37,7 @@ public class playerHealth : MonoBehaviour
     }
     public void Die()
         {
-            Destroy(gameObject);
+            Debug.Log("Adicionar animação e as coisa de morrer");
         }
 
    

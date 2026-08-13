@@ -11,7 +11,7 @@ public class LifeBar : MonoBehaviour
     {
         if (playerHealth != null)
         {
-          LifeBarIMG.fillAmount = playerHealth.health / playerHealth._healthMax;
+          LifeBarIMG.fillAmount = (float)playerHealth.health / playerHealth._healthMax;
         }
     }
 }
