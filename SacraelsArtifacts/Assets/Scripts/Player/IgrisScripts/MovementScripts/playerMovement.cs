@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
    
     private bool isDashing = false;
-    private bool isJumping = false;
+    //private bool isJumping = false;
     private Animator animator;
     public Grounded ground;
  

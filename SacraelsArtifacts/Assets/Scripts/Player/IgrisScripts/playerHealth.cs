@@ -7,7 +7,7 @@ public class playerHealth : MonoBehaviour
 
     [SerializeField] public int _healthMax = 10;
      
-     private bool isInvicible = false;
+     //private bool isInvicible = false;
 
      private Rigidbody2D rb;
 
