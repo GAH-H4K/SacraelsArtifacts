@@ -10,15 +10,25 @@ public class MeleeAttack : MonoBehaviour
     public LayerMask enemyLayers;
     
     public int attackDamage = 20;
-    
-    
- 
 
+    private Animator animator;
+
+    public bool isAttacking = false;
+
+    private void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
             AttackFunction();
+            animator.SetBool("IsAttacking", true);
+        }
+        else
+        {
+            animator.SetBool("IsAttacking", false);
         }
     }
 
