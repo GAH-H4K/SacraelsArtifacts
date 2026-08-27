@@ -1,65 +1,49 @@
 using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
-    public Transform attackPoint;
+    private GameObject attackArea;
 
-    public Vector2 attackSize = new Vector2(1.5f, 1f);
+    private bool attacking = false;
 
-    public float attackRange = 0.5f;
-    
-    public LayerMask enemyLayers;
-    
-    public int attackDamage = 20;
+    private float timeToAttack = 0.25f;
 
+    private float timer = 0f;
     private Animator animator;
 
-    public bool isAttacking = false;
 
     private void Start()
     {
+        attackArea = transform.GetChild(0).gameObject;
         animator = GetComponentInChildren<Animator>();
     }
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            AttackFunction();
+            Attack();
             animator.SetBool("IsAttacking", true);
         }
         else
         {
             animator.SetBool("IsAttacking", false);
         }
+
+        if(attacking)
+        {
+            timer += Time.deltaTime;
+
+            if(timer >= timeToAttack)
+            {
+                timer = 0;
+                attacking = false;
+                attackArea.SetActive(attacking);
+            }
+        }
     }
 
-    void AttackFunction()
-   {
-    Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(
-        attackPoint.position,
-        attackSize,
-        0f,
-        enemyLayers
-    );
-  
-    foreach (Collider2D enemy in hitEnemies)
-     {
-            Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
-         enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage, knockbackDirection);
-     }
-   }
-
-    void OnDrawGizmosSelected()
-   {
-     if (attackPoint == null)
-        return;
-
-      Gizmos.color = Color.red;
-
-     Gizmos.DrawWireCube(
-
-        attackPoint.position,
-        attackSize
-        
-        );
-   }
+    void Attack()
+    {
+        attacking = true;
+        attackArea.SetActive(attacking);
+    }
 }
