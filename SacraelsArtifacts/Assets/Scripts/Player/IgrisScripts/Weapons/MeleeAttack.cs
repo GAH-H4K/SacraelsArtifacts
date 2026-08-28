@@ -7,7 +7,7 @@ public class MeleeAttack : MonoBehaviour
 
     private float timeToAttack = 0.25f;
 
-    private float timer = 0f;
+    private float timer = 0.5f;
     private Animator animator;
 
 

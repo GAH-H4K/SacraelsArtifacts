@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class PlayerMovement : MonoBehaviour
+public class playerMovement : MonoBehaviour
 {
 
     [SerializeField] float speed;
