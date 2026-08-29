@@ -1,8 +1,13 @@
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
+public class BossHandAttack : MonoBehaviour
 {
-    
+    public GameObject Hand1;
+    public GameObject Hand2;
+
+
+    private bool OneHandIsAttacking = false;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
@@ -21,4 +26,5 @@ public class EnemyAttack : MonoBehaviour
            
         }
     }
+
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 96a527b49b4990e489850dea54b5564b
+guid: 293996ae1c96793418d1fe6e5be1b6d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4724957914244010818
-    second: mao_direitaC_0
+      213: 2871179879220717932
+    second: golemEXPOSTO_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mao_direitaC_0
+      name: golemEXPOSTO_0
       rect:
         serializedVersion: 2
-        x: 118
-        y: 94
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 299
+        y: 34
+        width: 383
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2435f29603c629140800000000000000
-      internalID: 4724957914244010818
+      spriteID: c69233353ea78d720800000000000000
+      internalID: 2871179879220717932
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e459640eba306694a81ce4682a060d11
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mao_direitaC_0: 4724957914244010818
+      golemEXPOSTO_0: 2871179879220717932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

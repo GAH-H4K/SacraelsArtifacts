@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
+public class Hand : MonoBehaviour
 {
     
     private void OnCollisionEnter2D(Collision2D collision)

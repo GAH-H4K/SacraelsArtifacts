@@ -1,26 +1,32 @@
 using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
-    private GameObject attackArea;
+    public GameObject attackArea;
 
     private bool attacking = false;
 
-    private float timeToAttack = 0.25f;
+    public float timeToAttack = 0.25f;
 
-    private float timer = 0.5f;
+    public float timer = 0.5f;
     private Animator animator;
 
 
     private void Start()
     {
-        attackArea = transform.GetChild(0).gameObject;
+        attackArea = transform.Find("AttackArea").gameObject;
         animator = GetComponentInChildren<Animator>();
     }
     void Update()
     {
+        Attack();
+    }
+
+    public void Attack()
+    {
         if (Input.GetButtonDown("Fire1"))
         {
-            Attack();
+            attacking = true;
+            attackArea.SetActive(attacking);
             animator.SetBool("IsAttacking", true);
         }
         else
@@ -41,9 +47,5 @@ public class MeleeAttack : MonoBehaviour
         }
     }
 
-    void Attack()
-    {
-        attacking = true;
-        attackArea.SetActive(attacking);
-    }
+    
 }

@@ -3,16 +3,15 @@ using UnityEngine;
 public class Grounded : MonoBehaviour
 {
     public bool isGrounded;
+    public int groundContacts = 0;
     
-    void Start()
-    {
-        
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            groundContacts++;
             isGrounded = true;
         }
     }
@@ -21,7 +20,12 @@ public class Grounded : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false;
+            groundContacts--;
+            
+            if (groundContacts <= 0)
+            {
+                isGrounded = false;
+            }
         }
     }
     // Update is called once per frame
