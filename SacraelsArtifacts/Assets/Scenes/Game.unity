@@ -2361,7 +2361,7 @@ Transform:
   m_GameObject: {fileID: 633583133}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.011548646, z: -0, w: 0.9999333}
-  m_LocalPosition: {x: 7.2806, y: -6.54, z: -1.07}
+  m_LocalPosition: {x: 7.2806, y: -6.68, z: -1.07}
   m_LocalScale: {x: 6.0638547, y: 7.1758113, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3105,7 +3105,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5012207, y: 5.0786505, z: -30.8}
+  m_LocalPosition: {x: 0.30426311, y: 5.0786505, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7903,7 +7903,7 @@ Transform:
   m_GameObject: {fileID: 4964287922083323128}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17, y: -1.59, z: 0}
+  m_LocalPosition: {x: 0.17, y: -1.4, z: 0}
   m_LocalScale: {x: 0.41, y: 0.41, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8011,7 +8011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
-  jumpForce: 20
+  jumpForce: 18
   minJumpHeight: 5
   ground: {fileID: 473224521}
 --- !u!1660057539 &9223372036854775807
