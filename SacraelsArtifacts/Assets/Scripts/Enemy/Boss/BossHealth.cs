@@ -4,6 +4,7 @@ public class BossHealth : MonoBehaviour
 {
     private int health;
     public int MaxHealth = 200;
+    public int secondPhaseHealth = 100;
     public DamagedParticle damagedParticle;
     private Animator animator;
     public GameObject BossArmored;
@@ -37,7 +38,7 @@ public class BossHealth : MonoBehaviour
             Die();
         }
 
-        if (health <= 100 && isArmored == true)
+        if (health <= secondPhaseHealth && isArmored == true)
         {
             changeParticle();
             BossArmored.SetActive(false);
@@ -45,14 +46,11 @@ public class BossHealth : MonoBehaviour
             isArmored = false;
 
         }
-
-
-
     }
     public void Die()
     {
         BossHands.Die();
-        BossActivation.isBossFightActive = false;
+        BossActivation.OpenBossFightConfiner();
         animator.SetBool("BossDie", true);
         Destroy(gameObject, 10f);
     }

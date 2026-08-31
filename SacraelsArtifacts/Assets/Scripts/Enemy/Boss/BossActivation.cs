@@ -3,21 +3,19 @@ using UnityEngine;
 public class BossActivation : MonoBehaviour
 {
     public GameObject bossFight;
-
-
-    public bool isBossFightActive = false;
-
+    public GameObject bossConfiner;
     public bool ifAlredyExecuted = false;
-
-    public float TimeToFinishTheFight = 10f;//isso é o tempo pra desativar o garotao
-
+    public void OpenBossFightConfiner()
+    {
+        bossConfiner.SetActive(false);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && ifAlredyExecuted == false )
         {
             bossFight.SetActive(true);
             ifAlredyExecuted = true;
-            isBossFightActive = true;
+            bossConfiner.SetActive(true);
         }
 
     }
