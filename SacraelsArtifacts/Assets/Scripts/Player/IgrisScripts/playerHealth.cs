@@ -17,9 +17,12 @@ public class playerHealth : MonoBehaviour
 
     private Animator animator;
 
+    public GameObject canvasDeath;
+
    
     void Start()
     {
+        canvasDeath.SetActive(false);
         animator = GetComponentInChildren<Animator>();
         health = _healthMax;
         rb = GetComponent<Rigidbody2D>();
@@ -48,6 +51,7 @@ public class playerHealth : MonoBehaviour
         _playerMovement.enabled = false;
         meleeAttack.enabled = false;
         animator.SetBool("IsDead", true);
+        canvasDeath.SetActive(true);
     }
 
    
