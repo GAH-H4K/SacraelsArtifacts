@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Hand : MonoBehaviour
 {
+    public BossHandAttack HandController;
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,7 +19,14 @@ public class Hand : MonoBehaviour
                 playerHealth.TakeDamage(1, knockbackDirection, knockbackForce);
             }
 
-           
+        
+            GetBack();
         }
     }
+
+    public void GetBack()
+    {
+        HandController.isReturning = true;
+    }
+
 }

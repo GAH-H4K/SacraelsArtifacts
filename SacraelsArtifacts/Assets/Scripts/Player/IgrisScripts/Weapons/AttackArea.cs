@@ -8,16 +8,28 @@ public class AttackArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        if(collider.GetComponent<BossHealth>() != null)
+        {
+            BossHealth health = collider.GetComponent<BossHealth>();
+            health.TakeDamage(Damage);
+        }
         
         if(collider.GetComponent<EnemyHealth>() != null)
         {
             EnemyHealth health = collider.GetComponent<EnemyHealth>();
             health.TakeDamage(Damage, knockbackForce);
         }
-        else if(collider.GetComponent<BreakableWall>() != null)
+        
+        if(collider.GetComponent<BreakableWall>() != null)
         {
             BreakableWall wall = collider.GetComponent<BreakableWall>();
             wall.GetHit();
+        }
+
+        if(collider.GetComponent<Hand>() != null)
+        {
+            Hand hand = collider.GetComponent<Hand>();
+            hand.GetBack();
         }
 
 

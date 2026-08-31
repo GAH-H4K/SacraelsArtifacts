@@ -15,7 +15,7 @@ public class playerHealth : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public Animator animator;
+    private Animator animator;
 
    
     void Start()

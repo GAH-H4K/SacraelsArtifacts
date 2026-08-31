@@ -11,12 +11,12 @@ public class playerMovement : MonoBehaviour
     [SerializeField] float jumpForce = 20f; 
     [SerializeField] float minJumpHeight = 5f;
     
-    [SerializeField] float dashForce = 20f;
+    //[SerializeField] float dashForce = 20f;
     private float moveInput;
     private Rigidbody2D rb;
 
    
-    private bool isDashing = false;
+    //private bool isDashing = false;
     //private bool isJumping = false;
     private Animator animator;
     public Grounded ground;
@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
      
         Move();
 
-        Dash();
+        //Dash();
     
     }
 
@@ -79,17 +79,17 @@ public class playerMovement : MonoBehaviour
 
     }
 
-    private void Dash()
-    {
-        if(Input.GetButtonDown("Dash") && isDashing == false)
-        {
-            Debug.Log("falta a logica do dash");
+    //private void Dash()
+    //{
+     //   if(Input.GetButtonDown("Dash") && isDashing == false)
+      //  {
+        //    Debug.Log("falta a logica do dash");
 
-            isDashing = true;
-            currentSpeed = dashForce;
+        //    isDashing = true;
+        //    currentSpeed = dashForce;
             
-        }
-    }
+       // }
+   // }
 
 }
 

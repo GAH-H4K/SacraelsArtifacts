@@ -4,6 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int health = 50;
     public DamagedParticle damagedParticle;
+    private int currentParticle = 0;
 
     private Rigidbody2D rb;
 
@@ -18,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 knockbackDirection)
     {
-        Instantiate(damagedParticle.particlePrefab, transform.position, Quaternion.identity);
+        Instantiate(damagedParticle.particlePrefab[currentParticle], transform.position, Quaternion.identity);
         health -= damage;
 
         rb.linearVelocity = Vector2.zero;
@@ -35,10 +36,12 @@ public class EnemyHealth : MonoBehaviour
         {
             Die();
         }
-
-        void Die()
-        {
-            Destroy(gameObject);
-        }
     }
+
+    public void Die()
+    {
+       Destroy(gameObject);
+    }
+    
 }
+
