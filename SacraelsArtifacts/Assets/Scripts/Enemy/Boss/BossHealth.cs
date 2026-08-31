@@ -15,6 +15,8 @@ public class BossHealth : MonoBehaviour
 
     private int currentParticle = 0;
 
+    public BossActivation BossActivation;
+
     public Transform particleSpawnPoint;
 
     void Start()
@@ -49,9 +51,10 @@ public class BossHealth : MonoBehaviour
     }
     public void Die()
     {
+        BossHands.Die();
+        BossActivation.isBossFightActive = false;
         animator.SetBool("BossDie", true);
         Destroy(gameObject, 10f);
-        BossHands.Die();
     }
 
     void changeParticle()

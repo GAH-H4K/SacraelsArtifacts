@@ -8,20 +8,28 @@ public class BossActivation : MonoBehaviour
 
     public bool isBossFightActive = false;
 
-    void Start()
+    public bool ifAlredyExecuted = false;
+
+
+
+    private void Update()
     {
-        bossFightConfiner.SetActive(false);
-        boss.SetActive(false);
+        if(isBossFightActive == false)
+        {
+            bossFightConfiner.SetActive(false);
+            boss.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && ifAlredyExecuted == false )
         {
             bossFightConfiner.SetActive(true);
             boss.SetActive(true);
+            ifAlredyExecuted = true;
+            isBossFightActive = true;
         }
 
-        isBossFightActive = true;
     }
 }

@@ -154,6 +154,6 @@ public class BossHandAttack : MonoBehaviour
     public void Die()
     {
         animator.SetBool("Die", true);
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 5f);
     }
 }
