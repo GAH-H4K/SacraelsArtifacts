@@ -325,7 +325,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 414226184}
-  - {fileID: 1264394461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &170682745
@@ -869,7 +868,7 @@ Transform:
   m_GameObject: {fileID: 297574601}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.257179, y: -5.6041403, z: 7.1}
+  m_LocalPosition: {x: -14.257179, y: -5.6041403, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1097,7 +1096,7 @@ Transform:
   m_GameObject: {fileID: 377776374}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.582825, y: 7.4658585, z: 7.1}
+  m_LocalPosition: {x: 13.3, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1139,6 +1138,7 @@ Transform:
   - {fileID: 932460132}
   - {fileID: 1754904457}
   - {fileID: 1136943901}
+  - {fileID: 1264394461}
   m_Father: {fileID: 170682744}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &414226185
@@ -1226,10 +1226,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2e74345ad18ff42a6c005781bc71d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  health: 100
+  MaxHealth: 200
   damagedParticle: {fileID: 414226188}
   BossArmored: {fileID: 932460131}
   BossExpost: {fileID: 1754904456}
+  BossHands: {fileID: 1264394460}
   isArmored: 1
   particleSpawnPoint: {fileID: 1136943901}
 --- !u!114 &414226188
@@ -1735,7 +1736,7 @@ Transform:
   m_GameObject: {fileID: 686774193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.862823, y: -5.5341406, z: 7.1}
+  m_LocalPosition: {x: 16.862823, y: -5.5341415, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1754,7 +1755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44235ccff0b32b34eb198d4485cf62bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hand
-  HandController: {fileID: 0}
+  HandController: {fileID: 1264394460}
 --- !u!61 &686774196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2134,7 +2135,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.399994, y: 5.0786505, z: -30.8}
+  m_LocalPosition: {x: 86.2, y: 5.0786505, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3137,7 +3138,7 @@ Transform:
   m_GameObject: {fileID: 1002026935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.4, y: -1.26, z: -30.8}
+  m_LocalPosition: {x: 86.2, y: -1.26, z: -30.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3675,6 +3676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1264394461}
   - component: {fileID: 1264394460}
+  - component: {fileID: 1264394462}
   m_Layer: 0
   m_Name: HandsController
   m_TagString: Untagged
@@ -3695,14 +3697,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHandAttack
   Hand1: {fileID: 297574601}
-  Hand2: {fileID: 0}
-  AttackSpeed: 8
+  Hand2: {fileID: 686774193}
+  AttackSpeed: 20
   OriginAttackPoint1: {fileID: 1897317084}
-  OriginAttackPoint2: {fileID: 0}
+  OriginAttackPoint2: {fileID: 377776375}
   PlayerPosition: {fileID: 5220151224473116327}
   isReturning: 0
+  HandAttacking: 0
   Hand1IsAttacking: 0
   Hand2IsAttacking: 0
+  timeToAttack: 10
+  MaxTimeToAttack: 5
 --- !u!4 &1264394461
 Transform:
   m_ObjectHideFlags: 0
@@ -3712,16 +3717,38 @@ Transform:
   m_GameObject: {fileID: 1264394459}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.462822, y: 16.534142, z: -7.1}
+  m_LocalPosition: {x: -2.462822, y: 16.53414, z: -7.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1897317084}
-  - {fileID: 297574602}
   - {fileID: 377776375}
+  - {fileID: 297574602}
   - {fileID: 686774194}
-  m_Father: {fileID: 170682744}
+  m_Father: {fileID: 414226184}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1264394462
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264394459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73d0fea5af98d944184c0b3f7666aeb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1267016138
 GameObject:
   m_ObjectHideFlags: 0
@@ -4740,13 +4767,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.15806389, y: 1.8020142}
-      - {x: -1.7429638, y: 2.0906732}
-      - {x: -2.8548298, y: 2.0449052}
-      - {x: -1.9586439, y: -0.064163476}
-      - {x: -2.0058722, y: -2.1338077}
-      - {x: 0.23326647, y: -2.152467}
-      - {x: 0.4099455, y: 0.1224269}
+    - - {x: -0.2061367, y: 1.7379192}
+      - {x: -1.173912, y: 2.5025249}
+      - {x: -2.1531277, y: 2.8730242}
+      - {x: -2.0404453, y: 1.0268067}
+      - {x: -1.7509308, y: 0.64108026}
+      - {x: -1.9105711, y: -0.6249939}
+      - {x: -1.8776832, y: -2.1498313}
+      - {x: -0.69611585, y: -2.1684906}
+      - {x: -0.008987427, y: -1.4054751}
+      - {x: 0.24970531, y: -0.02178666}
   m_UseDelaunayMesh: 0
 --- !u!4 &1711791897
 Transform:
@@ -5231,7 +5261,7 @@ Transform:
   m_GameObject: {fileID: 1897317083}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.557175, y: 7.395859, z: 0}
+  m_LocalPosition: {x: -14.7, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5888,7 +5918,7 @@ Transform:
   m_GameObject: {fileID: 2785545853547651496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.4, y: -1.26, z: -20.8}
+  m_LocalPosition: {x: 86.2, y: -1.26, z: -20.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6000,7 +6030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
   attackArea: {fileID: 0}
   timeToAttack: 0.6
-  timer: 0.5
+  timer: 0.6
 --- !u!114 &8579965509680641115
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    public int health = 100;
+    private int health;
+    public int MaxHealth = 200;
     public DamagedParticle damagedParticle;
     private Animator animator;
     public GameObject BossArmored;
     public GameObject BossExpost;
+
+    public BossHandAttack BossHands;
 
     public bool isArmored = true;
 
@@ -16,6 +19,8 @@ public class BossHealth : MonoBehaviour
 
     void Start()
     {
+        BossHands = GetComponentInChildren<BossHandAttack>();
+        health = MaxHealth;
         animator = GetComponentInChildren<Animator>();
         BossArmored.SetActive(true);
         BossExpost.SetActive(false);
@@ -30,7 +35,7 @@ public class BossHealth : MonoBehaviour
             Die();
         }
 
-        if (health <= 50 && isArmored == true)
+        if (health <= 100 && isArmored == true)
         {
             changeParticle();
             BossArmored.SetActive(false);
@@ -46,8 +51,7 @@ public class BossHealth : MonoBehaviour
     {
         animator.SetBool("BossDie", true);
         Destroy(gameObject, 10f);
-
-
+        BossHands.Die();
     }
 
     void changeParticle()
