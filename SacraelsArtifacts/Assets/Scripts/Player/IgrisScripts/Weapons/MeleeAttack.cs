@@ -23,13 +23,13 @@ public class MeleeAttack : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && attacking == false)
         {
             attacking = true;
             attackArea.SetActive(attacking);
             animator.SetBool("IsAttacking", true);
         }
-        else
+        else if(attacking == false)
         {
             animator.SetBool("IsAttacking", false);
         }

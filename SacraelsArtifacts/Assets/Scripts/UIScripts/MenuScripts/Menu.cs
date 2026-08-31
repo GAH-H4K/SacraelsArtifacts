@@ -4,27 +4,29 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-   
+    public GameObject FadeOut;
 
+    public GameObject Credits;
 
-    [Header("Menu UI properties")]
-    [SerializeField] private Button startButton;
-    [SerializeField] private Button exitButton;
-
-    private void OnEnable()
+    public void GoToGameScene()
     {
-        startButton.onClick.AddListener(GoToGameScene);
-        exitButton.onClick.AddListener(ExitGame);
-    }
-
-    private void GoToGameScene()
-    {
+        FadeOut.SetActive(true);
         SceneManager.LoadScene("Game");
     }
 
-    private void ExitGame()
+    public void CreditsOpen()
     {
+        Credits.SetActive(true);
+    }
+    public void CreditsClose()
+    {
+        Credits.SetActive(false);
+    }
 
+    public void ExitGame()
+    {
+        FadeOut.SetActive(true);
+        Application.Quit();
     }
 
 

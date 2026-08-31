@@ -10,11 +10,28 @@ public class BossActivation : MonoBehaviour
 
     public bool ifAlredyExecuted = false;
 
+    public float TimeToFinishTheFight = 10f;//isso é o tempo pra desativar o garotao
+
 
 
     private void Update()
     {
-        if(isBossFightActive == false)
+        timeToFinishTheFight();
+        IsFightOver();
+    }
+
+    public void timeToFinishTheFight()
+    {
+        if(TimeToFinishTheFight > 0 && isBossFightActive == false)
+        {
+           TimeToFinishTheFight -= Time.deltaTime;
+        }
+       
+    }
+
+    public void IsFightOver()
+    {
+        if(isBossFightActive == false && TimeToFinishTheFight <= 0)
         {
             bossFightConfiner.SetActive(false);
             boss.SetActive(false);
