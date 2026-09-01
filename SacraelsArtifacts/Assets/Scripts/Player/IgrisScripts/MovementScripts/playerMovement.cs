@@ -73,15 +73,16 @@ public class playerMovement : MonoBehaviour
         if (!isGrounded)
         {
             bool isRising = rb.linearVelocity.y > 0f;
+        }
 
-            animator.SetBool("IsJumping", isRising);
+            /*animator.SetBool("IsJumping", isRising);
             animator.SetBool("IsFalling", !isRising);
         }
         else
         {
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", false);
-        }
+        }*/
 
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > minJumpHeight)
         {
