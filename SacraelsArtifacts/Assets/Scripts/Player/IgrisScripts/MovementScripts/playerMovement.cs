@@ -13,9 +13,7 @@ public class playerMovement : MonoBehaviour
     private Animator animator;
 
     public Grounded ground;
-
-    private MeleeAttack meleeAttack;
-
+    
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -24,8 +22,6 @@ public class playerMovement : MonoBehaviour
         currentSpeed = speed;
 
         ground = GetComponentInChildren<Grounded>();
-
-        meleeAttack = GetComponent<MeleeAttack>();
     }
 
     void Update()
@@ -52,38 +48,10 @@ public class playerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-       
-        if (meleeAttack != null && meleeAttack.attacking)
-            return;
-
-        animator.SetBool(
-            "IsRunning",
-            moveInput != 0 && ground.isGrounded
-        );
     }
 
     private void Jump()
     {
-        bool isGrounded = ground.isGrounded;
-
-        
-        if (meleeAttack != null && meleeAttack.attacking)
-            return;
-
-        if (!isGrounded)
-        {
-            bool isRising = rb.linearVelocity.y > 0f;
-        }
-
-            /*animator.SetBool("IsJumping", isRising);
-            animator.SetBool("IsFalling", !isRising);
-        }
-        else
-        {
-            animator.SetBool("IsJumping", false);
-            animator.SetBool("IsFalling", false);
-        }*/
-
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > minJumpHeight)
         {
             rb.linearVelocity = new Vector2(
@@ -92,7 +60,7 @@ public class playerMovement : MonoBehaviour
             );
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && ground.isGrounded)
         {
             rb.linearVelocity = new Vector2(
                 rb.linearVelocity.x,
@@ -101,12 +69,4 @@ public class playerMovement : MonoBehaviour
         }
     }
 }
-    //private void Dash()
-    //{
-    //   if(Input.GetButtonDown("Dash") && isDashing == false)
-    //  {
-    //    Debug.Log("falta a logica do dash");
-    //    isDashing = true;
-    //    currentSpeed = dashForce;
-    // }
-    // }
+
