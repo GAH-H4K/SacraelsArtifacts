@@ -68,5 +68,13 @@ public class playerMovement : MonoBehaviour
             );
         }
     }
+
+
+    public void AnimatorParameters()
+    {
+        animator.SetFloat("xVeloity", Math.Abs(rb.linearVelocity.x));
+
+        animator.SetFloat("yVelocity", (rb.linearVelocity.y));
+    }
 }
 
