@@ -14,6 +14,7 @@ public class MeleeAttack : MonoBehaviour
     private void Start()
     {
         attackArea = transform.Find("AttackArea").gameObject;
+
         animator = GetComponentInChildren<Animator>();
 
         attackArea.SetActive(false);
@@ -32,11 +33,6 @@ public class MeleeAttack : MonoBehaviour
             timer = 0f;
 
             attackArea.SetActive(true);
-
-            // attack 
-            animator.SetBool("IsRunning", false);
-            animator.SetBool("IsJumping", false);
-            animator.SetBool("IsFalling", false);
 
             animator.SetBool("IsAttacking", true);
         }

@@ -1716,6 +1716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Grounded
   isGrounded: 0
   groundContacts: 0
+  animator: {fileID: 3557927313223271453}
 --- !u!1 &481500666
 GameObject:
   m_ObjectHideFlags: 0

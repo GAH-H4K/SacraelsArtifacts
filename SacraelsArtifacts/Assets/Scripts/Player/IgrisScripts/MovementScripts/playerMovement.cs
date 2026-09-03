@@ -13,7 +13,7 @@ public class playerMovement : MonoBehaviour
     private Animator animator;
 
     public Grounded ground;
-    
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -28,6 +28,7 @@ public class playerMovement : MonoBehaviour
     {
         Jump();
         Move();
+        AnimatorParameters();
     }
 
     private void Move()
@@ -66,13 +67,15 @@ public class playerMovement : MonoBehaviour
                 rb.linearVelocity.x,
                 jumpForce
             );
+
+            animator.SetBool("IsJumping", true);
         }
     }
 
 
     public void AnimatorParameters()
     {
-        animator.SetFloat("xVeloity", Math.Abs(rb.linearVelocity.x));
+        animator.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocity.x));
 
         animator.SetFloat("yVelocity", (rb.linearVelocity.y));
     }
