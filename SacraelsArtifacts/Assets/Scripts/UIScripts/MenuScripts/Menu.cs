@@ -25,7 +25,6 @@ public class Menu : MonoBehaviour
 
     public void ExitGame()
     {
-        FadeOut.SetActive(true);
         Application.Quit();
     }
 
