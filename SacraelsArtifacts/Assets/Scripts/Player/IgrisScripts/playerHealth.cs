@@ -48,9 +48,14 @@ public class playerHealth : MonoBehaviour
     }
     public void Die()
     {
+        rb.linearVelocity = Vector2.zero;
+
         _playerMovement.enabled = false;
+
         meleeAttack.enabled = false;
+
         animator.SetBool("IsDead", true);
+        
         canvasDeath.SetActive(true);
     }
 
