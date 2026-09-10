@@ -3,8 +3,11 @@ using UnityEngine;
 public class BossActivation : MonoBehaviour
 {
     public GameObject bossFight;
+    
     public GameObject bossConfiner;
-    public bool ifAlredyExecuted = false;
+
+    private bool ifAlredyExecuted = false;
+
     public void OpenBossFightConfiner()
     {
         bossConfiner.SetActive(false);
