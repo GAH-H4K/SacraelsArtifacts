@@ -5,8 +5,7 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour 
 {
     private Transform PlayerPosition;
-    
-
+    public bool playerInRange;
     public float EnemySpeed;
     void Start()
     {
@@ -15,13 +14,18 @@ public class EnemyFollow : MonoBehaviour
 
     void Update()
     {
-        FollowPlayer();
+        if(playerInRange == true)
+        {
+            FollowPlayer();
+        }
     }
     public void FollowPlayer()
     {
         transform.position = Vector2.MoveTowards(transform.position,
-        PlayerPosition.position,
-        EnemySpeed * Time.deltaTime);
+            PlayerPosition.position,
+            EnemySpeed * Time.deltaTime);
+
+
     }
 
 }

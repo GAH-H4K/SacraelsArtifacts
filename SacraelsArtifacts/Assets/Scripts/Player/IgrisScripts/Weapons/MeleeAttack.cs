@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class MeleeAttack : MonoBehaviour
 {
@@ -6,7 +7,10 @@ public class MeleeAttack : MonoBehaviour
 
     public bool attacking { get; private set; } = false;
 
-    public float timeToAttack = 0.25f;
+    public float timeToAttack = 0.6f;
+
+    public float timeToActivateAttackArea = 0.2f;
+
 
     private float timer = 0f;
     private Animator animator;
@@ -30,11 +34,12 @@ public class MeleeAttack : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && !attacking)
         {
             attacking = true;
+
             timer = 0f;
 
-            attackArea.SetActive(true);
-
             animator.SetBool("IsAttacking", true);
+
+            StartCoroutine(SetAttackAreaActive());
         }
 
         if (attacking)
@@ -45,10 +50,18 @@ public class MeleeAttack : MonoBehaviour
             {
                 timer = 0f;
                 attacking = false;
-
-                attackArea.SetActive(false);
                 animator.SetBool("IsAttacking", false);
             }
         }
     }
+
+    IEnumerator SetAttackAreaActive()
+    {
+        attackArea.SetActive(true);
+
+        yield return new WaitForSeconds(timeToActivateAttackArea);
+
+        attackArea.SetActive(false);
+    }
+    
 }
