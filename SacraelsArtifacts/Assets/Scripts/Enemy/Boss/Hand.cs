@@ -16,7 +16,7 @@ public class Hand : MonoBehaviour
             {
                 Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
                 float knockbackForce = 5f; 
-                playerHealth.TakeDamage(3, knockbackDirection, knockbackForce);
+                playerHealth.TakeDamage(2, knockbackDirection, knockbackForce);
             }
 
         
@@ -27,6 +27,8 @@ public class Hand : MonoBehaviour
     public void GetBack()
     {
         HandController.isReturning = true;
+
+
     }
 
 }

@@ -1863,8 +1863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2e74345ad18ff42a6c005781bc71d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  MaxHealth: 300
-  secondPhaseHealth: 150
+  MaxHealth: 250
+  secondPhaseHealth: 130
   damagedParticle: {fileID: 414226188}
   BossArmored: {fileID: 932460131}
   BossExpost: {fileID: 1754904456}
@@ -2519,7 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7eb18bcad2f3549beee9b8bf3e886a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  health: 50
+  health: 40
   damagedParticle: {fileID: 535493287}
   knockbackForce: 5
 --- !u!50 &535493290
@@ -3462,8 +3462,8 @@ Transform:
   m_GameObject: {fileID: 749090519}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.57, y: -2.86, z: -1.06}
-  m_LocalScale: {x: 3.45, y: 8.702891, z: 1}
+  m_LocalPosition: {x: 65.2, y: -1.69, z: -1.06}
+  m_LocalScale: {x: -0.43432, y: 0.43432, z: 0.43432}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1794237548}
@@ -3502,17 +3502,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.6294188, y: -0.10862827}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 40.96, y: 23.04}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.255735, y: 22.073812}
   m_EdgeRadius: 0
 --- !u!212 &749090522
 SpriteRenderer:
@@ -3561,8 +3561,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 842683e65f97b584a95409e9c52d9bbd, type: 3}
-  m_Color: {r: 0.5145571, g: 0.5471698, b: 0.4000534, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f502b7a25d2f1b34d9e3a06beacf81ae, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3586,6 +3586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BreakableWall
   HitsToBreak: 3
   damagedParticle: {fileID: 749090524}
+  spriteRenderer: {fileID: 749090522}
+  almostBrokenWall: {fileID: 21300000, guid: 8f6989f72681697489389422bc0eb7aa, type: 3}
 --- !u!114 &749090524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3801,7 +3803,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -110.5, y: 5.0786433, z: -30.8}
+  m_LocalPosition: {x: -103.84557, y: 5.0786433, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4079,7 +4081,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.060806274, y: 0.44779086}
+  m_Offset: {x: -0.060806274, y: 0.70037127}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4089,7 +4091,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 24.161137, y: 2.6185296}
+  m_Size: {x: 24.161137, y: 3.1236906}
   m_EdgeRadius: 0
 --- !u!114 &817579071
 MonoBehaviour:
@@ -4468,7 +4470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7eb18bcad2f3549beee9b8bf3e886a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  health: 50
+  health: 40
   damagedParticle: {fileID: 927458626}
   knockbackForce: 5
 --- !u!114 &927458624
@@ -6220,7 +6222,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.060806274, y: 0.44779086}
+  m_Offset: {x: -0.060806274, y: 0.6879126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6230,7 +6232,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 24.161137, y: 2.6185296}
+  m_Size: {x: 24.161137, y: 3.0987728}
   m_EdgeRadius: 0
 --- !u!114 &1351427978
 MonoBehaviour:
@@ -9315,7 +9317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
   attackArea: {fileID: 1711791895}
   timeToAttack: 0.6
-  timeToActivateAttackArea: 0.2
+  timeToActivateAttackArea: 0.5
 --- !u!114 &8579965509680641115
 MonoBehaviour:
   m_ObjectHideFlags: 0
