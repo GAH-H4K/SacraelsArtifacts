@@ -14,10 +14,10 @@ public class BossHandAttack : MonoBehaviour
 
     public bool isReturning = false;
 
-    public int HandAttacking = 0;
+    public int HandChoosed = 0;
 
-    public bool Hand1IsAttacking = false;
-    public bool Hand2IsAttacking = false;
+    public bool Hand1WasChoosed = false;
+    public bool Hand2WasChoosed = false;
 
     public float timeToAttack = 10f;
     public float MaxTimeToAttack = 5f;
@@ -45,12 +45,12 @@ public class BossHandAttack : MonoBehaviour
     {
         TimeToAttack();
 
-        if (Hand1IsAttacking && !isReturning)
+        if (Hand1WasChoosed && !isReturning)
         {
             Attack1();
         }
 
-        if (Hand2IsAttacking && !isReturning)
+        if (Hand2WasChoosed && !isReturning)
         {
             Attack2();
         }
@@ -84,7 +84,7 @@ public class BossHandAttack : MonoBehaviour
 
     public void BackToOrigin()
     {
-        if (Hand1IsAttacking)
+        if (Hand1WasChoosed)
         {
             Hand1.transform.position = Vector2.MoveTowards(
                 Hand1.transform.position,
@@ -94,13 +94,11 @@ public class BossHandAttack : MonoBehaviour
 
             if (Hand1.transform.position == OriginAttackPoint1.position)
             {
-                Hand1IsAttacking = false;
+                Hand1WasChoosed = false;
                 isReturning = false;
             }
         }
-
-
-        if (Hand2IsAttacking)
+        else if (Hand2WasChoosed)
         {
             Hand2.transform.position = Vector2.MoveTowards(
                 Hand2.transform.position,
@@ -110,10 +108,15 @@ public class BossHandAttack : MonoBehaviour
 
             if (Hand2.transform.position == OriginAttackPoint2.position)
             {
-                Hand2IsAttacking = false;
+                Hand2WasChoosed = false;
                 isReturning = false;
             }
         }
+        else if(!Hand1WasChoosed && !Hand2WasChoosed)
+        {
+            isReturning = false;
+        }
+
     }
 
 
@@ -123,15 +126,15 @@ public class BossHandAttack : MonoBehaviour
 
         if (!isReturning)
         {
-            HandAttacking = Random.Range(0, 2);
+            HandChoosed = Random.Range(0, 2);
 
-            if (HandAttacking == 0)
+            if (HandChoosed == 0)
             {
-                Hand1IsAttacking = true;
+                Hand1WasChoosed = true;
             }
             else
             {
-                Hand2IsAttacking = true;
+                Hand2WasChoosed = true;
             }
         }
     }

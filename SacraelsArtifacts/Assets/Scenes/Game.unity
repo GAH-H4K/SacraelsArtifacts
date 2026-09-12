@@ -3465,7 +3465,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -103.84265, y: 5.078644, z: -30.8}
+  m_LocalPosition: {x: -103.84109, y: 5.078644, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3937,7 +3937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &927458620
 Transform:
   m_ObjectHideFlags: 0
@@ -4555,7 +4555,7 @@ Transform:
   m_GameObject: {fileID: 1002026935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -106.6, y: 0, z: -30.8}
+  m_LocalPosition: {x: -110.5, y: 0, z: -30.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5417,9 +5417,9 @@ MonoBehaviour:
   OriginAttackPoint2: {fileID: 377776375}
   PlayerPosition: {fileID: 5220151224473116327}
   isReturning: 0
-  HandAttacking: 0
-  Hand1IsAttacking: 0
-  Hand2IsAttacking: 0
+  HandChoosed: 0
+  Hand1WasChoosed: 0
+  Hand2WasChoosed: 0
   timeToAttack: 2
   MaxTimeToAttack: 5
 --- !u!4 &1264394461
@@ -8680,7 +8680,7 @@ Transform:
   m_GameObject: {fileID: 2785545853547651496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -106.6, y: 0, z: -20.8}
+  m_LocalPosition: {x: -110.5, y: 0, z: -20.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8791,7 +8791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea82640ad70a72429cafb781281d3f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAttack
-  attackArea: {fileID: 0}
+  attackArea: {fileID: 1711791895}
   timeToAttack: 0.6
 --- !u!114 &8579965509680641115
 MonoBehaviour:
