@@ -3804,7 +3804,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -103.83887, y: 5.0786433, z: -30.8}
+  m_LocalPosition: {x: -103.84018, y: 5.0786433, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9198,7 +9198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b718752cf483f7c498bc9ff9810273f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
-  PauseMenuCanvas: {fileID: 2120807568}
+  PauseMenuCanvas: {fileID: 1989279497}
+  _playerMovement: {fileID: 8579965509680641115}
+  meleeAttack: {fileID: 7560995741959617773}
   IsPaused: 0
 --- !u!114 &2120807571
 MonoBehaviour:
