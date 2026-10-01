@@ -3804,7 +3804,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -103.84018, y: 5.0786433, z: -30.8}
+  m_LocalPosition: {x: -103.85316, y: 5.0786433, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9202,6 +9202,7 @@ MonoBehaviour:
   _playerMovement: {fileID: 8579965509680641115}
   meleeAttack: {fileID: 7560995741959617773}
   IsPaused: 0
+  CanPause: 1
 --- !u!114 &2120807571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9497,6 +9498,7 @@ MonoBehaviour:
   meleeAttack: {fileID: 7560995741959617773}
   health: 0
   _healthMax: 10
+  PauseScript: {fileID: 2120807570}
   canvasDeath: {fileID: 1401828561}
 --- !u!114 &7560995741959617773
 MonoBehaviour:

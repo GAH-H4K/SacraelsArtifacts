@@ -10,10 +10,16 @@ public class PauseMenu : MonoBehaviour
 
     public bool IsPaused = false;
 
+    public bool CanPause = true;
+
 
     public void Update()
     {
-        Pause();
+        if(CanPause == true)
+        {
+          Pause();
+        }
+        
     }
 
     public void Pause()

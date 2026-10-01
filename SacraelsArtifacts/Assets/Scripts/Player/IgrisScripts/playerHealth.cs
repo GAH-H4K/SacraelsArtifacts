@@ -10,6 +10,8 @@ public class playerHealth : MonoBehaviour
     [SerializeField] public int health;
 
     [SerializeField] public int _healthMax = 10;
+
+    public PauseMenu PauseScript;
      
     //private bool isInvicible = false;
 
@@ -57,8 +59,9 @@ public class playerHealth : MonoBehaviour
         animator.SetBool("IsDead", true);
         
         canvasDeath.SetActive(true);
+
+        PauseScript.CanPause = false;
     }
 
-   
-    
+
 }
