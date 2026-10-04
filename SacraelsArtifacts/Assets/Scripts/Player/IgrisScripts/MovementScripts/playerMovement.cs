@@ -59,6 +59,7 @@ public class playerMovement : MonoBehaviour
                 rb.linearVelocity.x,
                 0f
             );
+
         }
 
         if (Input.GetButtonDown("Jump") && ground.isGrounded)

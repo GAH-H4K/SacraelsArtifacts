@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BossHealth : MonoBehaviour
 {
@@ -20,19 +21,32 @@ public class BossHealth : MonoBehaviour
 
     public Transform particleSpawnPoint;
 
+    private SpriteRenderer spriteRend;
+
+    public int flashCount = 0;
+
     void Start()
     {
         BossHands = GetComponentInChildren<BossHandAttack>();
+
         health = MaxHealth;
+
         animator = GetComponentInChildren<Animator>();
+
+        GetSpriteRenderer();
+
         BossArmored.SetActive(true);
+
         BossExpost.SetActive(false);
     }
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        StartCoroutine(FlashSprite());
+
         Instantiate(damagedParticle.particlePrefab[currentParticle], particleSpawnPoint.position, Quaternion.identity);
-        
+
+        health -= damage;
+
         if (health <= 0)
         {
             Die();
@@ -40,12 +54,32 @@ public class BossHealth : MonoBehaviour
 
         if (health <= secondPhaseHealth && isArmored == true)
         {
-            changeParticle();
-            BossArmored.SetActive(false);
-            BossExpost.SetActive(true);
-            isArmored = false;
 
+            BossArmored.SetActive(false);
+
+            BossExpost.SetActive(true);
+
+            GetSpriteRenderer();
+
+            isArmored = false;
+            
+            changeParticle();
         }
+    }
+
+    private IEnumerator FlashSprite()
+    {
+
+        for (int i = 0; i < flashCount; i++)
+        {
+            spriteRend.color = new Color(1, 0.9f, 0.9f, 1);
+
+            yield return new WaitForSeconds(0.1f);
+
+            spriteRend.color = new Color(1, 1, 1, 1);
+        }
+
+
     }
     public void Die()
     {
@@ -53,6 +87,11 @@ public class BossHealth : MonoBehaviour
         BossActivation.OpenBossFightConfiner();
         animator.SetBool("BossDie", true);
         Destroy(gameObject, 10f);
+    }
+
+    private void GetSpriteRenderer()
+    {
+        spriteRend = GetComponentInChildren<SpriteRenderer>();
     }
 
     void changeParticle()
