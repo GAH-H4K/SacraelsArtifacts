@@ -8,6 +8,21 @@ public class Menu : MonoBehaviour
 
     public GameObject Credits;
 
+    public GameObject GuideText;
+
+    public void Update()
+    {
+        MoveCamera();
+    }
+
+    public void MoveCamera()
+    {
+        if(Input.anyKey)
+        {
+            Debug.Log("coisou");
+        }
+    }
+
     public void GoToGameScene()
     {
         FadeOut.SetActive(true);
