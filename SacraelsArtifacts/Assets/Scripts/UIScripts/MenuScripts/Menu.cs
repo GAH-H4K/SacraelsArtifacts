@@ -10,25 +10,92 @@ public class Menu : MonoBehaviour
 
     public GameObject GuideText;
 
+    public bool CameraIsUp = true;
+
+    public GameObject Camera;
+
+    public Transform CameraUpPoint;
+
+    public bool CameraIsGoingUp = false;
+
+    public Transform CameraDownPoint;
+
+    public bool CameraIsGoingDown = false;
+
+    public float CameraSpeed = 5f;
+
     public void Update()
     {
         MoveCamera();
+
+        if(Input.GetKeyDown(KeyCode.Escape) && CameraIsUp == true)
+        {
+            Application.Quit();
+        }
+
+        if(CameraIsGoingDown)
+        {
+            CameraDown();
+        }
+        else if(CameraIsGoingUp)
+        {
+            CameraUp();
+        }
+
+        
     }
 
     public void MoveCamera()
     {
-        if(Input.anyKey)
+        if(Input.anyKeyDown && CameraIsUp == true && Input.GetKeyDown(KeyCode.Escape) == false)
         {
-            Debug.Log("coisou");
+            //descer a camera
+            CameraIsUp = false;
+            CameraIsGoingDown = true;
+            
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && CameraIsUp == false)
+        {
+            //subir a camera
+            CameraIsUp = true;
+            CameraIsGoingUp = true;
         }
     }
 
+    public void CameraDown()
+    {
+        GuideText.SetActive(false);
+
+        Camera.transform.position = Vector2.Lerp(
+                Camera.transform.position,
+                CameraDownPoint.position,
+                CameraSpeed * Time.deltaTime);
+
+        if (Camera.transform.position == CameraDownPoint.position)
+        {
+            CameraIsGoingDown = false;
+        }
+    }
+
+    public void CameraUp()
+    {
+         GuideText.SetActive(true);
+
+            Camera.transform.position = Vector2.Lerp(
+                Camera.transform.position,
+                CameraUpPoint.position,
+                CameraSpeed * Time.deltaTime);
+
+        if (Camera.transform.position == CameraUpPoint.position)
+        {
+            CameraIsGoingUp = false;
+        }
+    }
     public void GoToGameScene()
     {
         FadeOut.SetActive(true);
         SceneManager.LoadScene("Game");
     }
-
     public void CreditsOpen()
     {
         Credits.SetActive(true);

@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 344743597}
   - component: {fileID: 344743596}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: GuideTXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,7 +884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 599562502}
   m_Layer: 0
-  m_Name: MenuUp
+  m_Name: CameraUpPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1178,7 +1178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736849659}
   m_Layer: 0
-  m_Name: MenuDown
+  m_Name: CameraDownPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1556,6 +1556,7 @@ GameObject:
   - component: {fileID: 977796829}
   - component: {fileID: 977796832}
   - component: {fileID: 977796834}
+  - component: {fileID: 977796835}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1631,11 +1632,11 @@ Transform:
   m_GameObject: {fileID: 977796828}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 8.29, z: 0}
+  m_LocalScale: {x: 0.9992936, y: 0.9992936, z: 0.9992936}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1138480110}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &977796832
 MonoBehaviour:
@@ -1713,78 +1714,17 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!1 &1138480108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1138480110}
-  - component: {fileID: 1138480109}
-  - component: {fileID: 1138480111}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!50 &1138480109
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138480108}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.5
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0.5
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!4 &1138480110
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138480108}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.29, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 977796831}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1138480111
+--- !u!95 &977796835
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138480108}
+  m_GameObject: {fileID: 977796828}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7e5d37d3b6463444eb7135fb224f8019, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce1960554606376418d23de6005e9c0a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2319,7 +2259,7 @@ GameObject:
   - component: {fileID: 1855482279}
   - component: {fileID: 1855482280}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2424,7 +2364,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Menu
   FadeOut: {fileID: 2143640579}
   Credits: {fileID: 686192499}
-  GuideText: {fileID: 0}
+  GuideText: {fileID: 344743594}
+  CameraIsUp: 1
+  Camera: {fileID: 977796828}
+  CameraUpPoint: {fileID: 599562502}
+  CameraIsGoingUp: 0
+  CameraDownPoint: {fileID: 736849659}
+  CameraIsGoingDown: 0
+  CameraSpeed: 3.5
 --- !u!95 &1855482280
 Animator:
   serializedVersion: 7
@@ -2994,11 +2941,11 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 977796831}
   - {fileID: 686192504}
   - {fileID: 1855482278}
   - {fileID: 62584536}
   - {fileID: 558725186}
-  - {fileID: 1138480110}
   - {fileID: 521337798}
   - {fileID: 1349378212}
   - {fileID: 1504069201}
