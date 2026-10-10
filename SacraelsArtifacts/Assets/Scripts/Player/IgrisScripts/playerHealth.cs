@@ -12,7 +12,7 @@ public class playerHealth : MonoBehaviour
 
     [SerializeField] public int _healthMax = 10;
 
-    [SerializeField] public int InvincibilityFlashes = 2;
+    [SerializeField] public int InvincibilityFlashes = 4;
 
     public PauseMenu PauseScript;
 

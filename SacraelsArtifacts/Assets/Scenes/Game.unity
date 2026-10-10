@@ -3805,7 +3805,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -103.83094, y: 5.078644, z: -30.8}
+  m_LocalPosition: {x: -101.784065, y: 5.078644, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4808,6 +4808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LifeBar
   LifeBarIMG: {fileID: 965789294}
   playerHealth: {fileID: 7425156787290755604}
+  FillSpeed: 3
 --- !u!1 &969175074
 GameObject:
   m_ObjectHideFlags: 0
@@ -9340,7 +9341,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 0220ed2aa15f38643a9972e2d18b1bd5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
