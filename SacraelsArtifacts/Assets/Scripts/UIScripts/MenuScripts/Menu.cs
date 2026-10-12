@@ -6,11 +6,13 @@ using UnityEngine.EventSystems;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject FadeOut;
+    public GameObject FadeOut = null;
 
     public GameObject Credits;
 
     public GameObject GuideText;
+
+    public GameObject Options;
 
     [Header("Camera Settings")]
 
@@ -67,6 +69,11 @@ public class Menu : MonoBehaviour
         {
             CreditsClose();
         }
+        if (Input.GetKeyDown(KeyCode.Escape) && Options.activeSelf == true)
+        {
+            CloseOptions();
+        }
+        
 
         //mexer a estrela de selecao
         if (CameraIsUp == false && CameraIsGoingDown == false && CameraIsGoingUp == false)
@@ -131,7 +138,7 @@ public class Menu : MonoBehaviour
     public void MoveCamera()
     {
 
-        if (CameraIsGoingUp == false && CameraIsGoingDown == false && Credits.activeSelf == false)
+        if (CameraIsGoingUp == false && CameraIsGoingDown == false && Credits.activeSelf == false && Options.activeSelf == false)
         {
             if (Input.anyKeyDown && CameraIsUp == true && Input.GetKeyDown(KeyCode.Escape) == false)
             {
@@ -196,6 +203,16 @@ public class Menu : MonoBehaviour
     {
         FadeOut.SetActive(true);
         SceneManager.LoadScene("Game");
+    }
+
+    public void OpenOptions()
+    {
+        Options.SetActive(true);
+    }
+
+    public void CloseOptions()
+    {
+        Options.SetActive(false);
     }
     public void CreditsOpen()
     {

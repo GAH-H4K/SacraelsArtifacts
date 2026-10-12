@@ -3805,7 +3805,7 @@ Transform:
   m_GameObject: {fileID: 791674304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -101.784065, y: 5.078644, z: -30.8}
+  m_LocalPosition: {x: 89, y: 5.078644, z: -30.8}
   m_LocalScale: {x: 0.9948244, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4990,7 +4990,7 @@ Transform:
   m_GameObject: {fileID: 1002026935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -109.9, y: -2.2, z: -30.8}
+  m_LocalPosition: {x: 89, y: -2.2, z: -30.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5848,6 +5848,7 @@ MonoBehaviour:
   Hand1: {fileID: 297574601}
   Hand2: {fileID: 686774193}
   AttackSpeed: 20
+  ReloadSpeed: 3
   OriginAttackPoint1: {fileID: 1897317084}
   OriginAttackPoint2: {fileID: 377776375}
   PlayerPosition: {fileID: 5220151224473116327}
@@ -5857,6 +5858,8 @@ MonoBehaviour:
   Hand2WasChoosed: 0
   timeToAttack: 2
   MaxTimeToAttack: 5
+  ErrorMargin: 0.2
+  CanAttack: 1
 --- !u!4 &1264394461
 Transform:
   m_ObjectHideFlags: 0
@@ -9402,7 +9405,7 @@ Transform:
   m_GameObject: {fileID: 2785545853547651496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -109.9, y: -2.2, z: -20.8}
+  m_LocalPosition: {x: 89, y: -2.2, z: -20.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

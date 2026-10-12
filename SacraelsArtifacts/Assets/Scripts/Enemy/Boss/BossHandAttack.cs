@@ -5,7 +5,9 @@ public class BossHandAttack : MonoBehaviour
     public GameObject Hand1;
     public GameObject Hand2;
 
-    public float AttackSpeed = 5f;
+    public float AttackSpeed = 20f;
+
+    public float ReloadSpeed = 3f;
 
     public Transform OriginAttackPoint1;
     public Transform OriginAttackPoint2;
@@ -22,35 +24,43 @@ public class BossHandAttack : MonoBehaviour
     public float timeToAttack = 10f;
     public float MaxTimeToAttack = 5f;
 
+    public float ErrorMargin = 0.2f;
     private Animator animator;
+
+    public bool CanAttack = true;
 
     void Start()
     {
         animator = GetComponent<Animator>();
 
-        Hand1.transform.position = Vector2.MoveTowards(
+        Hand1.transform.position = Vector2.Lerp(
                 Hand1.transform.position,
                 OriginAttackPoint1.position,
                 AttackSpeed * Time.deltaTime);
 
-        Hand2.transform.position = Vector2.MoveTowards(
+        Hand2.transform.position = Vector2.Lerp(
                 Hand2.transform.position,
                 OriginAttackPoint2.position,
                 AttackSpeed * Time.deltaTime);
-        
+
     }
 
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Die();
+        }
         TimeToAttack();
 
-        if (Hand1WasChoosed && !isReturning)
+        if (Hand1WasChoosed && !isReturning && CanAttack == true)
         {
             Attack1();
         }
 
-        if (Hand2WasChoosed && !isReturning)
+        if (Hand2WasChoosed && !isReturning && CanAttack == true)
         {
             Attack2();
         }
@@ -86,13 +96,13 @@ public class BossHandAttack : MonoBehaviour
     {
         if (Hand1WasChoosed)
         {
-            Hand1.transform.position = Vector2.MoveTowards(
+            Hand1.transform.position = Vector2.Lerp(
                 Hand1.transform.position,
                 OriginAttackPoint1.position,
-                AttackSpeed * Time.deltaTime
+                ReloadSpeed * Time.deltaTime
             );
 
-            if (Hand1.transform.position == OriginAttackPoint1.position)
+            if (Vector2.Distance(Hand1.transform.position, OriginAttackPoint1.position) <= ErrorMargin)
             {
                 Hand1WasChoosed = false;
                 isReturning = false;
@@ -100,19 +110,19 @@ public class BossHandAttack : MonoBehaviour
         }
         else if (Hand2WasChoosed)
         {
-            Hand2.transform.position = Vector2.MoveTowards(
+            Hand2.transform.position = Vector2.Lerp(
                 Hand2.transform.position,
                 OriginAttackPoint2.position,
-                AttackSpeed * Time.deltaTime
+                ReloadSpeed * Time.deltaTime
             );
 
-            if (Hand2.transform.position == OriginAttackPoint2.position)
+            if (Vector2.Distance(Hand2.transform.position, OriginAttackPoint2.position) <= ErrorMargin)
             {
                 Hand2WasChoosed = false;
                 isReturning = false;
             }
         }
-        else if(!Hand1WasChoosed && !Hand2WasChoosed)
+        else if (!Hand1WasChoosed && !Hand2WasChoosed)
         {
             isReturning = false;
         }
@@ -156,6 +166,7 @@ public class BossHandAttack : MonoBehaviour
 
     public void Die()
     {
+        CanAttack = false;
         animator.SetBool("Die", true);
         Destroy(gameObject, 5f);
     }
