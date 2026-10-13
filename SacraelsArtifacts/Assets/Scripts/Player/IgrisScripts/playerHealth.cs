@@ -47,6 +47,8 @@ public class playerHealth : MonoBehaviour
         }
         else
         {
+            
+
             StartCoroutine(Invincibility());
 
             rb.linearVelocity = Vector2.zero;
@@ -61,15 +63,17 @@ public class playerHealth : MonoBehaviour
     {
         // layer 7 = inimigo e layer 8 = player
         Physics2D.IgnoreLayerCollision(8, 7, true);
+        animator.SetBool("GotHit", true);
 
         for (int i = 0; i < InvincibilityFlashes; i++)
         {
-            spriteRend.color = new Color(1, 0, 0, 0.5f);
+            spriteRend.color = new Color(0.9f, 0, 0, 1);
             yield return new WaitForSeconds(0.1f);
             spriteRend.color = new Color(1, 1, 1, 1);
             yield return new WaitForSeconds(0.1f);
         }
-
+        
+        animator.SetBool("GotHit", false);
         Physics2D.IgnoreLayerCollision(8, 7, false);
     }
 

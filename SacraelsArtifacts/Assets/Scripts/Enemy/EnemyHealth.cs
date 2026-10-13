@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class EnemyHealth : MonoBehaviour
     private int currentParticle = 0;
 
     private Rigidbody2D rb;
+
+    public float HitStopDuration = 0.1f; 
 
     [SerializeField] private float knockbackForce = 5f;
 
@@ -28,14 +31,21 @@ public class EnemyHealth : MonoBehaviour
 
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
 
-
-
-
+        GameFeelManager.Instance.HitStop(HitStopDuration);
 
         if (health <= 0)
         {
             Die();
         }
+    }
+
+    IEnumerator FlashRed()
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        Color originalColor = spriteRenderer.color;
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = originalColor;
     }
 
     public void Die()

@@ -3,13 +3,15 @@ using UnityEngine;
 public class Hand : MonoBehaviour
 {
     public BossHandAttack HandController;
+
+    public float HitStopDuration = 0.1f;
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
         if (collision.gameObject.CompareTag("Player"))
         {
-           
+            GameFeelManager.Instance.HitStop(HitStopDuration);
             
             playerHealth playerHealth = collision.gameObject.GetComponent<playerHealth>();
             if (playerHealth != null)
