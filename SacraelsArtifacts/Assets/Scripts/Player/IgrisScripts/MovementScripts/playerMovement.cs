@@ -59,60 +59,63 @@ public class playerMovement : MonoBehaviour
     }
 
     private void Jump()
-{
-    if (Input.GetButtonDown("Jump"))
     {
-        jumpHeld = true;
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpHeld = true;
 
-        if (ground.isGrounded)
-        {
-            MoveUp();
+            if (ground.isGrounded)
+            {
+                MoveUp();
+            }
+            else
+            {
+                StartCoroutine(JumpBuffer());
+            }
         }
-        else
+
+        if (Input.GetButtonUp("Jump"))
         {
-            StartCoroutine(JumpBuffer());
+            jumpHeld = false;
+
+            if (rb.linearVelocity.y > minJumpHeight)
+            {
+                rb.linearVelocity = new Vector2(
+                    rb.linearVelocity.x,
+                    0f
+                );
+            }
+        }
+
+        if (JumpBufferActive)
+        {
+            if (ground.isGrounded)
+            {
+
+                MoveUp();
+                JumpBufferActive = false;
+
+                if (!jumpHeld && rb.linearVelocity.y > minJumpHeight)
+                {
+                    rb.linearVelocity = new Vector2(
+                        rb.linearVelocity.x,
+                        0f
+                    );
+                }
+            }
+
         }
     }
 
-    if (Input.GetButtonUp("Jump"))
+    private void MoveUp()
     {
-        jumpHeld = false;
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            jumpForce
+        );
 
-        if (rb.linearVelocity.y > minJumpHeight)
-        {
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x,
-                0f
-            );
-        }
+        animator.SetBool("IsJumping", true);
     }
-
-    if (JumpBufferActive && ground.isGrounded)
-    {
-    
-        MoveUp();
-        JumpBufferActive = false;
-
-        // Se já soltou o botão, corta o pulo armazenado
-        if (!jumpHeld && rb.linearVelocity.y > minJumpHeight)
-        {
-            rb.linearVelocity = new Vector2(
-                rb.linearVelocity.x,
-                0f
-            );
-        }
-    }
-}
-
-private void MoveUp()
-{
-    rb.linearVelocity = new Vector2(
-        rb.linearVelocity.x,
-        jumpForce
-    );
-
-    animator.SetBool("IsJumping", true);
-}
 
     IEnumerator JumpBuffer()
     {
