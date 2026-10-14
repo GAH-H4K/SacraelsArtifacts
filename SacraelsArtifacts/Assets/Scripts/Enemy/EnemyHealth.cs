@@ -13,9 +13,15 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] private float knockbackForce = 5f;
 
+    public Animator animator;
+
+    public EnemyFollow AttackScript;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
+        AttackScript = GetComponent<EnemyFollow>();
     }
 
 
@@ -35,7 +41,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            Die();
+            StartCoroutine(Die());
+            animator.SetBool("IsDead", true);
         }
     }
 
@@ -48,8 +55,10 @@ public class EnemyHealth : MonoBehaviour
         spriteRenderer.color = originalColor;
     }
 
-    public void Die()
+    IEnumerator Die()
     {
+        AttackScript.enabled = false; 
+        yield return new WaitForSeconds(2f);
        Destroy(gameObject);
     }
     

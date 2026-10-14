@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class playerMovement : MonoBehaviour
 {
@@ -7,16 +8,20 @@ public class playerMovement : MonoBehaviour
 
     [SerializeField] float jumpForce = 20f;
     [SerializeField] float minJumpHeight = 5f;
-
     private float moveInput;
     private Rigidbody2D rb;
     private Animator animator;
 
     public Grounded ground;
 
+    public bool JumpBufferActive = false;
+
+    public bool jumpHeld = false;
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+
         rb = GetComponent<Rigidbody2D>();
 
         currentSpeed = speed;
@@ -27,7 +32,9 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         Jump();
+
         Move();
+
         AnimatorParameters();
     }
 
@@ -52,25 +59,66 @@ public class playerMovement : MonoBehaviour
     }
 
     private void Jump()
+{
+    if (Input.GetButtonDown("Jump"))
     {
-        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > minJumpHeight)
+        jumpHeld = true;
+
+        if (ground.isGrounded)
+        {
+            MoveUp();
+        }
+        else
+        {
+            StartCoroutine(JumpBuffer());
+        }
+    }
+
+    if (Input.GetButtonUp("Jump"))
+    {
+        jumpHeld = false;
+
+        if (rb.linearVelocity.y > minJumpHeight)
         {
             rb.linearVelocity = new Vector2(
                 rb.linearVelocity.x,
                 0f
             );
-
         }
+    }
 
-        if (Input.GetButtonDown("Jump") && ground.isGrounded)
+    if (JumpBufferActive && ground.isGrounded)
+    {
+    
+        MoveUp();
+        JumpBufferActive = false;
+
+        // Se já soltou o botão, corta o pulo armazenado
+        if (!jumpHeld && rb.linearVelocity.y > minJumpHeight)
         {
             rb.linearVelocity = new Vector2(
                 rb.linearVelocity.x,
-                jumpForce
+                0f
             );
-
-            animator.SetBool("IsJumping", true);
         }
+    }
+}
+
+private void MoveUp()
+{
+    rb.linearVelocity = new Vector2(
+        rb.linearVelocity.x,
+        jumpForce
+    );
+
+    animator.SetBool("IsJumping", true);
+}
+
+    IEnumerator JumpBuffer()
+    {
+        JumpBufferActive = true;
+        yield return new WaitForSeconds(0.15f);
+        JumpBufferActive = false;
     }
 
 

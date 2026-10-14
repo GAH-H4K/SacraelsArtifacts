@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Grounded : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Grounded : MonoBehaviour
 
     public Animator animator;
 
-
+    public bool CoyoteTimerActive = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,13 +20,22 @@ public class Grounded : MonoBehaviour
         }
     }
 
+    IEnumerator CoyoteTimer()
+    {
+        CoyoteTimerActive = true;
+        yield return new WaitForSeconds(0.15f);
+        isGrounded = false;
+        CoyoteTimerActive = false;
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            StartCoroutine(CoyoteTimer());
             groundContacts--;
 
-            if (groundContacts <= 0)
+            if (groundContacts <= 0 && !CoyoteTimerActive)
             {
                 isGrounded = false;
             }

@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 5caf05ce5b0c1594fa8cf84c98af1db3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7452390677826876723
+    second: death_monstro_tuto_0
+  - first:
+      213: 3393002930702741359
+    second: death_monstro_tuto_1
+  - first:
+      213: 2989419155107066830
+    second: death_monstro_tuto_2
+  - first:
+      213: -3883674923301456044
+    second: death_monstro_tuto_3
+  - first:
+      213: 5678420769750669783
+    second: death_monstro_tuto_4
+  - first:
+      213: 5680398549481439539
+    second: death_monstro_tuto_5
+  - first:
+      213: -2032015919985716613
+    second: death_monstro_tuto_6
+  - first:
+      213: -4149799603718241735
+    second: death_monstro_tuto_7
+  - first:
+      213: 3391922503954198395
+    second: death_monstro_tuto_8
+  - first:
+      213: -9077860187651374464
+    second: death_monstro_tuto_9
+  - first:
+      213: -5514220291201954096
+    second: death_monstro_tuto_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: death_monstro_tuto_0
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 416
+        width: 468
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335bd4746d53c6760800000000000000
+      internalID: 7452390677826876723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_1
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 416
+        width: 492
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f6566403e561f20800000000000000
+      internalID: 3393002930702741359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_2
+      rect:
+        serializedVersion: 2
+        x: 3645
+        y: 416
+        width: 492
+        height: 170
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3b7e802ec8c7920800000000000000
+      internalID: 2989419155107066830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_3
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 416
+        width: 480
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457368ddb3a6a1ac0800000000000000
+      internalID: -3883674923301456044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_4
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 404
+        width: 451
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d95032ca9dcdce40800000000000000
+      internalID: 5678420769750669783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_5
+      rect:
+        serializedVersion: 2
+        x: 8145
+        y: 416
+        width: 439
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3314c7c7264d4de40800000000000000
+      internalID: 5680398549481439539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_6
+      rect:
+        serializedVersion: 2
+        x: 9645
+        y: 416
+        width: 421
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72105f6944dcc3e0800000000000000
+      internalID: -2032015919985716613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_monstro_tuto_7
+      rect:
+        serializedVersion: 2
+        x: 11231
+        y: 415
+        width: 245
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932415b3f33f866c0800000000000000
+      internalID: -4149799603718241735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2739f436b6279c7469b6574d2ff9ac6d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      death_monstro_tuto_0: 7452390677826876723
+      death_monstro_tuto_1: 3393002930702741359
+      death_monstro_tuto_2: 2989419155107066830
+      death_monstro_tuto_3: -3883674923301456044
+      death_monstro_tuto_4: 5678420769750669783
+      death_monstro_tuto_5: 5680398549481439539
+      death_monstro_tuto_6: -2032015919985716613
+      death_monstro_tuto_7: -4149799603718241735
+      death_monstro_tuto_8: 3391922503954198395
+      death_monstro_tuto_9: -9077860187651374464
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

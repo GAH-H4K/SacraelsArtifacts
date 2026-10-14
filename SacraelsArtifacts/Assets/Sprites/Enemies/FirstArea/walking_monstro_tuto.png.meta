@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 6f106a33b637f654786688d3bb598615
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8460346697464534554
+    second: walking_monstro_tuto_0
+  - first:
+      213: 5644001536526645998
+    second: walking_monstro_tuto_1
+  - first:
+      213: 3816847857661005389
+    second: walking_monstro_tuto_2
+  - first:
+      213: 7683406388994904227
+    second: walking_monstro_tuto_3
+  - first:
+      213: 1141243492047122590
+    second: walking_monstro_tuto_4
+  - first:
+      213: -7755086133570186729
+    second: walking_monstro_tuto_5
+  - first:
+      213: -9097572462588894231
+    second: walking_monstro_tuto_6
+  - first:
+      213: -6476432117226259634
+    second: walking_monstro_tuto_7
+  - first:
+      213: 8137795749367409740
+    second: walking_monstro_tuto_8
+  - first:
+      213: -1721998131038550812
+    second: walking_monstro_tuto_9
+  - first:
+      213: -8351286234631293572
+    second: walking_monstro_tuto_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walking_monstro_tuto_0
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 419
+        width: 442
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e92af4e08fc69a80800000000000000
+      internalID: -8460346697464534554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_1
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 419
+        width: 442
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeafd688e75835e40800000000000000
+      internalID: 5644001536526645998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_2
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 419
+        width: 462
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e489d67ea28f430800000000000000
+      internalID: 3816847857661005389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_3
+      rect:
+        serializedVersion: 2
+        x: 5149
+        y: 419
+        width: 482
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a012010761f0aa60800000000000000
+      internalID: 7683406388994904227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_4
+      rect:
+        serializedVersion: 2
+        x: 6649
+        y: 419
+        width: 472
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90f1b1d8e286df00800000000000000
+      internalID: 1141243492047122590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_5
+      rect:
+        serializedVersion: 2
+        x: 8149
+        y: 419
+        width: 442
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712ddfdef36606490800000000000000
+      internalID: -7755086133570186729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_6
+      rect:
+        serializedVersion: 2
+        x: 9649
+        y: 419
+        width: 442
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e36309db0eeeb180800000000000000
+      internalID: -9097572462588894231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_7
+      rect:
+        serializedVersion: 2
+        x: 11149
+        y: 419
+        width: 462
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b3cc09d471f16a0800000000000000
+      internalID: -6476432117226259634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_8
+      rect:
+        serializedVersion: 2
+        x: 12649
+        y: 419
+        width: 482
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c6abf3e124fe070800000000000000
+      internalID: 8137795749367409740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_9
+      rect:
+        serializedVersion: 2
+        x: 14149
+        y: 419
+        width: 472
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e48f87c2db3a18e0800000000000000
+      internalID: -1721998131038550812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_monstro_tuto_10
+      rect:
+        serializedVersion: 2
+        x: 15649
+        y: 419
+        width: 442
+        height: 172
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c753137aa654a1c80800000000000000
+      internalID: -8351286234631293572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6929b1de054177246a40d9e8c3a3c81d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      walking_monstro_tuto_0: -8460346697464534554
+      walking_monstro_tuto_1: 5644001536526645998
+      walking_monstro_tuto_10: -8351286234631293572
+      walking_monstro_tuto_2: 3816847857661005389
+      walking_monstro_tuto_3: 7683406388994904227
+      walking_monstro_tuto_4: 1141243492047122590
+      walking_monstro_tuto_5: -7755086133570186729
+      walking_monstro_tuto_6: -9097572462588894231
+      walking_monstro_tuto_7: -6476432117226259634
+      walking_monstro_tuto_8: 8137795749367409740
+      walking_monstro_tuto_9: -1721998131038550812
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

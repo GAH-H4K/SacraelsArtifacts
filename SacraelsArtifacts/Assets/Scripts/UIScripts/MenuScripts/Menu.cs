@@ -46,6 +46,8 @@ public class Menu : MonoBehaviour
 
     public float SelectionStarDistanceFromButton = 1f;
 
+    public string GameSceneName = "FirstArea";
+
     public void Update()
     {
         MoveCamera();
@@ -202,7 +204,7 @@ public class Menu : MonoBehaviour
     public void GoToGameScene()
     {
         FadeOut.SetActive(true);
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(GameSceneName);
     }
 
     public void OpenOptions()
