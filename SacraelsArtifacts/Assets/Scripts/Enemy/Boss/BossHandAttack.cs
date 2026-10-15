@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BossHandAttack : MonoBehaviour
 {
@@ -43,6 +44,9 @@ public class BossHandAttack : MonoBehaviour
                 OriginAttackPoint2.position,
                 AttackSpeed * Time.deltaTime);
 
+
+        StartCoroutine(FindPlayer());
+
     }
 
 
@@ -68,6 +72,22 @@ public class BossHandAttack : MonoBehaviour
         if (isReturning)
         {
             BackToOrigin();
+        }
+    }
+    IEnumerator FindPlayer()
+    {
+        while (PlayerPosition == null)
+        {
+            GameObject player =
+            GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+            {
+                PlayerPosition = player.transform;
+                yield break;
+            }
+
+            yield return null;
         }
     }
 

@@ -92,5 +92,4 @@ public class playerHealth : MonoBehaviour
         PauseScript.CanPause = false;
     }
 
-
 }

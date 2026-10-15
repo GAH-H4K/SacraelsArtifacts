@@ -53,7 +53,7 @@ public class EnemyFollow : MonoBehaviour
         while (PlayerPosition == null)
         {
             GameObject player =
-                GameObject.FindGameObjectWithTag("Player");
+            GameObject.FindGameObjectWithTag("Player");
 
             if (player != null)
             {
