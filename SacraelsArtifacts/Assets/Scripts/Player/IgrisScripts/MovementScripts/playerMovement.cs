@@ -109,12 +109,13 @@ public class playerMovement : MonoBehaviour
 
     private void MoveUp()
     {
+        animator.SetBool("IsJumping", true);
+
         rb.linearVelocity = new Vector2(
             rb.linearVelocity.x,
             jumpForce
         );
 
-        animator.SetBool("IsJumping", true);
     }
 
     IEnumerator JumpBuffer()

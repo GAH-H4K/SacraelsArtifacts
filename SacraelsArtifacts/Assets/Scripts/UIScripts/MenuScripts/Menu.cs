@@ -46,7 +46,7 @@ public class Menu : MonoBehaviour
 
     public float SelectionStarDistanceFromButton = 1f;
 
-    public string GameSceneName = "FirstArea";
+    public string GameSceneName;
 
     public void Update()
     {
