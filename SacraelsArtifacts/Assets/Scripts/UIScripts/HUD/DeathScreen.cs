@@ -4,7 +4,7 @@ public class DeathScreen : MonoBehaviour
 {
     public void Restart()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("FirstScene");
     }
 
     public void MainMenu()

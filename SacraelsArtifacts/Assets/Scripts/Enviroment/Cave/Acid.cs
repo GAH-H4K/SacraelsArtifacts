@@ -22,11 +22,13 @@ public class Acid : MonoBehaviour
 
     IEnumerator FindPlayer()
     {
-        GameObject player =
-            GameObject.FindGameObjectWithTag("Player");
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 
+        if (playerObject != null)
+        {
+            player = playerObject.GetComponent<playerHealth>();
+        }
 
         yield return null;
-
     }
 }
