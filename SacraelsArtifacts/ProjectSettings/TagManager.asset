@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - CameraBounds
+  - Camera
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,21 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 197927913
+    locked: 0
+  - name: Enemies
+    uniqueID: 31823327
+    locked: 0
+  - name: Player
+    uniqueID: 3052991127
+    locked: 0
+  - name: Walls
+    uniqueID: 4019206261
+    locked: 0
+  - name: Front
+    uniqueID: 1398861449
     locked: 0
   m_RenderingLayers:
   - Default
