@@ -15,6 +15,8 @@ public class PlayerPersistence : MonoBehaviour
             return;
         }
 
+        
+
         instance = this;
 
         DontDestroyOnLoad(gameObject);
@@ -25,6 +27,10 @@ public class PlayerPersistence : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if(SceneManager.GetActiveScene().name == "Menu")
+        {
+            Destroy(gameObject);
+        }
         GameObject spawn = GameObject.Find(spawnName);
 
         if (spawn != null)

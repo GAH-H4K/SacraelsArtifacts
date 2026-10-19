@@ -7,11 +7,12 @@ public class IntroManager : MonoBehaviour
 {
     public GameObject[] introText;
     public GameObject introCanvas;
+    public GameObject guideCanvas;
     public int currentText;
 
     public bool CanGoToNext = true;
 
-    public bool playableSceneIsOn;
+    public bool playableSceneIsOn = true;
 
     public Animator animator;
 
@@ -25,6 +26,15 @@ public class IntroManager : MonoBehaviour
     void Update()
     {
         Intro();
+
+        if(playableSceneIsOn)
+        {
+            guideCanvas.SetActive(true);
+        }
+        else if(!playableSceneIsOn)
+        {
+            guideCanvas.SetActive(false);
+        }
     }
 
     public void Intro()
