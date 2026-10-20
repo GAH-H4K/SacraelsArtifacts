@@ -9,7 +9,7 @@ public class ParallaxFX : MonoBehaviour
     {
         startPosition = transform.position.x;
 
-        camera = GameObject.FindWithTag("Camera");
+        camera = GameObject.FindWithTag("MainCamera");
     }
 
     // Update is called once per frame

@@ -33,15 +33,24 @@ public class CameraPersistence : MonoBehaviour
     {
         GameObject boundsObject = GameObject.FindWithTag("CameraBounds");
 
+        if (boundsObject == null)
+        {
+            Destroy(gameObject);
+        }
+
         if (confiner2D == null)
         {
             confiner2D = GetComponent<CinemachineConfiner2D>();
         }
 
-        confiner2D.BoundingShape2D = boundsObject.GetComponent<Collider2D>();
+        if(confiner2D != null)
+        {
+            confiner2D.BoundingShape2D = boundsObject.GetComponent<Collider2D>();
 
-        
-        confiner2D.InvalidateBoundingShapeCache(); 
+
+            confiner2D.InvalidateBoundingShapeCache();
+        }
+
 
     }
 }

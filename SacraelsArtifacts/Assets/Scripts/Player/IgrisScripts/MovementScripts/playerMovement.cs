@@ -87,30 +87,27 @@ public class playerMovement : MonoBehaviour
             }
         }
 
-        if (JumpBufferActive)
+        if (JumpBufferActive && ground.isGrounded)
         {
-            if (ground.isGrounded)
+
+
+            MoveUp();
+            JumpBufferActive = false;
+
+            if (!jumpHeld && rb.linearVelocity.y > minJumpHeight)
             {
-
-                MoveUp();
-                JumpBufferActive = false;
-
-                if (!jumpHeld && rb.linearVelocity.y > minJumpHeight)
-                {
-                    rb.linearVelocity = new Vector2(
-                        rb.linearVelocity.x,
-                        0f
-                    );
-                }
+                rb.linearVelocity = new Vector2(
+                    rb.linearVelocity.x,
+                    0f
+                );
             }
+
 
         }
     }
 
     private void MoveUp()
     {
-        animator.SetBool("IsJumping", true);
-
         rb.linearVelocity = new Vector2(
             rb.linearVelocity.x,
             jumpForce
@@ -130,7 +127,29 @@ public class playerMovement : MonoBehaviour
     {
         animator.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocity.x));
 
-        animator.SetFloat("yVelocity", (rb.linearVelocity.y));
+        animator.SetFloat("yVelocity", rb.linearVelocity.y);
+
+        if (!ground.isGrounded)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            StartCoroutine(StopJumpAnimation());
+        }
+
+
+
+    }
+
+    private IEnumerator StopJumpAnimation()
+    {
+        yield return new WaitForSeconds(0.05f);
+
+        if (ground.isGrounded)
+        {
+            animator.SetBool("IsJumping", false);
+        }
     }
 }
 

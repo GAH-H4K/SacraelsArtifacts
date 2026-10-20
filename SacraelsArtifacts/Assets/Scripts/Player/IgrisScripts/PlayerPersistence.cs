@@ -6,6 +6,14 @@ public class PlayerPersistence : MonoBehaviour
     public static PlayerPersistence instance;
     public static string spawnName;
 
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name == "Menu")
+        {
+            Destroy(gameObject);
+        }
+
+    }
 
     private void Awake()
     {
@@ -15,28 +23,27 @@ public class PlayerPersistence : MonoBehaviour
             return;
         }
 
-        
-
         instance = this;
 
+
+
         DontDestroyOnLoad(gameObject);
+
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if(SceneManager.GetActiveScene().name == "Menu")
-        {
-            Destroy(gameObject);
-        }
         GameObject spawn = GameObject.Find(spawnName);
+
 
         if (spawn != null)
         {
             transform.position = spawn.transform.position;
             spawnName = null;
         }
+
     }
+
 }

@@ -19,9 +19,6 @@ public class Grounded : MonoBehaviour
         {
             groundContacts++;
             isGrounded = true;
-           
-            animator.SetBool("IsJumping", false);
-            
         }
     }
 
@@ -37,7 +34,6 @@ public class Grounded : MonoBehaviour
 
         if (groundContacts <= 0)
         {
-            animator.SetBool("IsJumping", true);
             isGrounded = false;
         }
 
@@ -50,7 +46,6 @@ public class Grounded : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            animator.SetBool("IsJumping", true);
 
             groundContacts--;
 

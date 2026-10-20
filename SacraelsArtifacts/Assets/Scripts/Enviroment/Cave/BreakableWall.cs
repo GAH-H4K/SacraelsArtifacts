@@ -17,11 +17,14 @@ public class BreakableWall : MonoBehaviour
         Instantiate(damagedParticle.particlePrefab[currentParticle], transform.position, Quaternion.identity);
         HitsToBreak--;
 
-        if(HitsToBreak <= 2)
+        if (HitsToBreak <= 2)
         {
-            spriteRenderer.sprite = almostBrokenWall;
+            if (almostBrokenWall != null)
+            {
+                spriteRenderer.sprite = almostBrokenWall;
+            }
         }
-        if(HitsToBreak <= 0)
+        if (HitsToBreak <= 0)
         {
             Destroy(gameObject);
         }

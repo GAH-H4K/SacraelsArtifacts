@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -15,11 +16,11 @@ public class PauseMenu : MonoBehaviour
 
     public void Update()
     {
-        if(CanPause == true)
+        if (CanPause == true)
         {
-          Pause();
+            Pause();
         }
-        
+
     }
 
     public void Pause()
@@ -41,7 +42,7 @@ public class PauseMenu : MonoBehaviour
                 meleeAttack.enabled = true;
 
                 PauseMenuCanvas.SetActive(false);
-                
+
             }
             else if (IsPaused == false)
             {
@@ -60,6 +61,27 @@ public class PauseMenu : MonoBehaviour
                 PauseMenuCanvas.SetActive(true);
             }
         }
+
+    }
+    public void Exit()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Options()
+    {
+        //SceneManager.LoadScene("");
+    }
+
+    //gambiarra maluca me desculpe
+    private void OnDestroy()
+    {
+
+        Time.timeScale = 1.0f;
+
+        IsPaused = false;
+
+
     }
 
 
