@@ -144,7 +144,7 @@ public class playerMovement : MonoBehaviour
 
     private IEnumerator StopJumpAnimation()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.01f);
 
         if (ground.isGrounded)
         {

@@ -24,9 +24,18 @@ public class CameraPersistence : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name == "Menu")
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         UpdateCameraBounds(bounds);
+        Debug.Log("ssss");
     }
 
     public void UpdateCameraBounds(Collider2D newBounds)
@@ -36,6 +45,7 @@ public class CameraPersistence : MonoBehaviour
         if (boundsObject == null)
         {
             Destroy(gameObject);
+            Debug.Log("ssssaaa");
         }
 
         if (confiner2D == null)
@@ -46,7 +56,6 @@ public class CameraPersistence : MonoBehaviour
         if(confiner2D != null)
         {
             confiner2D.BoundingShape2D = boundsObject.GetComponent<Collider2D>();
-
 
             confiner2D.InvalidateBoundingShapeCache();
         }
