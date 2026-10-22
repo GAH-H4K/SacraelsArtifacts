@@ -170,7 +170,7 @@ MonoBehaviour:
   SelectionStarSpeed: 5
   CurrentButtonIndex: 0
   SelectionStarDistanceFromButton: 0.5
-  GameSceneName: FirstArea
+  GameSceneName: Intro
 --- !u!4 &22119263
 Transform:
   m_ObjectHideFlags: 0

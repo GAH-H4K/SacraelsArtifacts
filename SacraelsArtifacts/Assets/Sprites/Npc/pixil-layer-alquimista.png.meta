@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: ffb4f514a0046f344a1d7c22a89bd013
+guid: db09e7c85a8eb1a498cc1e9bb9e807e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7197905872798191046
-    second: PLatformTiles_0
-  - first:
-      213: 5708513626190117227
-    second: PLatformTiles_1
-  - first:
-      213: -1761393848930766741
-    second: PLatformTiles_2
+      213: -699101604618835050
+    second: pixil-layer-alquimista_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,17 +96,56 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PLatformTiles_0
+      name: pixil-layer-alquimista_0
       rect:
         serializedVersion: 2
-        x: 204
-        y: 384
-        width: 167
-        height: 157
+        x: 4374
+        y: 999
+        width: 1177
+        height: 1802
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a327a2daeb6eb1c90800000000000000
-      internalID: -7197905872798191046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PLatformTiles_1
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 384
-        width: 167
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b69f984e5e6b83f40800000000000000
-      internalID: 5708513626190117227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PLatformTiles_2
-      rect:
-        serializedVersion: 2
-        x: 629
-        y: 384
-        width: 167
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b607cec60a54e87e0800000000000000
-      internalID: -1761393848930766741
+      spriteID: 69be9ca6bca4c46f0800000000000000
+      internalID: -699101604618835050
       vertices: []
       indices: 
       edges: []
@@ -185,9 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PLatformTiles_0: -7197905872798191046
-      PLatformTiles_1: 5708513626190117227
-      PLatformTiles_2: -1761393848930766741
+      pixil-layer-alquimista_0: -699101604618835050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
