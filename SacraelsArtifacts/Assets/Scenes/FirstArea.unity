@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &32987720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2181,7 +2181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &197891087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2603,7 +2603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &286982991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5684,7 +5684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &619330014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6063,7 +6063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &636575744
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6168,7 +6168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &648212950
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8267,7 +8267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &820644325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9724,7 +9724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &954023210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12575,7 +12575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &1138734776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13589,7 +13589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &1271244794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13835,7 +13835,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -17359,7 +17359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &1685903069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19529,7 +19529,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
+  m_VolumeFrameworkUpdateModeOption: 0
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -20212,7 +20212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &1877646852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21022,7 +21022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &1948684100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22474,7 +22474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFX
   camera: {fileID: 1815158000}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.8
 --- !u!212 &2025974268
 SpriteRenderer:
   m_ObjectHideFlags: 0
