@@ -56,6 +56,12 @@ TagManager:
   - name: Platform
     uniqueID: 2615397437
     locked: 0
+  - name: NPC
+    uniqueID: 3979295535
+    locked: 0
+  - name: Forniture
+    uniqueID: 1806732245
+    locked: 0
   - name: Player
     uniqueID: 3052991127
     locked: 0
