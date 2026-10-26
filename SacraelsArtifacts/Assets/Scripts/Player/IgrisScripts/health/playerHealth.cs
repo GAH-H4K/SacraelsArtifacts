@@ -47,7 +47,7 @@ public class playerHealth : MonoBehaviour
         }
         else
         {
-            
+
 
             StartCoroutine(Invincibility());
 
@@ -72,9 +72,27 @@ public class playerHealth : MonoBehaviour
             spriteRend.color = new Color(1, 1, 1, 1);
             yield return new WaitForSeconds(0.1f);
         }
-        
+
         animator.SetBool("GotHit", false);
         Physics2D.IgnoreLayerCollision(8, 7, false);
+    }
+
+
+    public void Heal(int HealAmount)
+    {
+        if (health >= _healthMax || health <= 0)
+        {
+            return;
+        }
+        else if (health < _healthMax)
+        {
+            health += HealAmount;
+            if (health > _healthMax)
+            {
+                health = _healthMax;
+            }
+        }
+
     }
 
     public void Die()

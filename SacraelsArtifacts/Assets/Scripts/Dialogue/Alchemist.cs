@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Alchemist : MonoBehaviour
 {
-    void OnTriggerStay2D(Collider2D collision)
+    /*void OnTriggerStay2D(Collider2D collision)
     {
         if(collider.CompareTag("player") && Input.GetKeyDown(KeyCode.E));
         {
@@ -13,5 +13,5 @@ public class Alchemist : MonoBehaviour
     private void StartDialogue()
     {
         
-    }
+    }*/
 }

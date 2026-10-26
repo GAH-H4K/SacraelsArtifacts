@@ -12,7 +12,6 @@ public class ParallaxFX : MonoBehaviour
         camera = GameObject.FindWithTag("MainCamera");
     }
 
-    // Update is called once per frame
     void Update()
     {
         float distance = camera.transform.position.x * parallaxEffect;
