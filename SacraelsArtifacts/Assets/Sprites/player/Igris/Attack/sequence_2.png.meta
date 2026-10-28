@@ -1,34 +1,55 @@
 fileFormatVersion: 2
-guid: 2bd4933c151b6d4459cab497103c7c31
+guid: 11ae50ce087a4f04ca237dc38f827e79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7899997740444497725
-    second: ataquemerda_0
+      213: 7843828072217357176
+    second: sequence_2_0
   - first:
-      213: -8702196525097748424
-    second: ataquemerda_1
+      213: 262765123494569152
+    second: sequence_2_1
   - first:
-      213: -1474260062205719332
-    second: ataquemerda_2
+      213: 2143445788693924781
+    second: sequence_2_2
   - first:
-      213: -8582900309337623617
-    second: ataquemerda_3
+      213: -8874611175349672304
+    second: sequence_2_3
   - first:
-      213: 5267279933497444465
-    second: ataquemerda_4
+      213: 3586301582184510727
+    second: sequence_2_4
   - first:
-      213: -5305159736738033516
-    second: ataquemerda_5
+      213: 5810643696044574492
+    second: sequence_2_5
   - first:
-      213: 7832398574479618885
-    second: ataquemerda_6
+      213: -8994114635375448759
+    second: sequence_2_6
   - first:
-      213: 5898855455270814031
-    second: ataquemerda_7
+      213: -3059447568813887583
+    second: sequence_2_7
   - first:
-      213: 729778644764164398
-    second: ataquemerda_8
+      213: 2818771520046814028
+    second: sequence_2_8
+  - first:
+      213: 1701556731196085882
+    second: sequence_2_9
+  - first:
+      213: -9037406462815327565
+    second: sequence_2_10
+  - first:
+      213: -9022273029497757121
+    second: sequence_2_11
+  - first:
+      213: 4015501543192842874
+    second: sequence_2_12
+  - first:
+      213: 6770977272368532750
+    second: sequence_2_13
+  - first:
+      213: -4787417539832465710
+    second: sequence_2_14
+  - first:
+      213: -4847856547540253785
+    second: sequence_2_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,7 +120,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,111 +145,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ataquemerda_0
+      name: sequence_2_0
       rect:
         serializedVersion: 2
-        x: 260
-        y: 334
-        width: 616
-        height: 1164
+        x: 329
+        y: 6119
+        width: 762
+        height: 1452
       alignment: 9
-      pivot: {x: 0.6518348, y: -0.000000026217851}
+      pivot: {x: 0.68952954, y: 0.008529116}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d373595c61e62ad60800000000000000
-      internalID: 7899997740444497725
+      spriteID: 87ba0c3c210eadc60800000000000000
+      internalID: 7843828072217357176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ataquemerda_2
+      name: sequence_2_6
       rect:
         serializedVersion: 2
-        x: 1781
-        y: 334
-        width: 709
-        height: 1175
+        x: 379
+        y: 4220
+        width: 980
+        height: 1390
       alignment: 9
-      pivot: {x: 0.5753823, y: -0.0028428878}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.456859, y: 0.01334413}
+      border: {x: 0, y: 2, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdcceadc8406a8be0800000000000000
-      internalID: -1474260062205719332
+      spriteID: 94ded49546c7e2380800000000000000
+      internalID: -8994114635375448759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ataquemerda_3
+      name: sequence_2_12
       rect:
         serializedVersion: 2
-        x: 3303
-        y: 334
-        width: 994
-        height: 1038
+        x: 379
+        y: 2319
+        width: 929
+        height: 922
       alignment: 9
-      pivot: {x: 0.41934738, y: -0.000000029400365}
+      pivot: {x: 0.5, y: 0.000039454397}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb3375f84a963e880800000000000000
-      internalID: -8582900309337623617
+      spriteID: a72da05e06de9b730800000000000000
+      internalID: 4015501543192842874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ataquemerda_4
+      name: sequence_2_15
       rect:
         serializedVersion: 2
-        x: 4865
-        y: 335
-        width: 752
-        height: 740
+        x: 379
+        y: 399
+        width: 902
+        height: 942
       alignment: 9
-      pivot: {x: 0.48223227, y: 0}
+      pivot: {x: 0.50941753, y: 0.0039827707}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17888a83133291940800000000000000
-      internalID: 5267279933497444465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ataquemerda_6
-      rect:
-        serializedVersion: 2
-        x: 6383
-        y: 337
-        width: 749
-        height: 738
-      alignment: 9
-      pivot: {x: 0.48652762, y: -0.00007898181}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5433223710542bc60800000000000000
-      internalID: 7832398574479618885
+      spriteID: 7a3cfc1b724f8bcb0800000000000000
+      internalID: -4847856547540253785
       vertices: []
       indices: 
       edges: []
@@ -237,7 +236,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 12571060b34ab7c4ab0d6597b211ec7d
+    spriteID: 2f384b3f365c6364e8c44da7c03eaf68
     internalID: 0
     vertices: []
     indices: 
@@ -245,19 +244,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":true,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      ataquemerda_0: 7899997740444497725
-      ataquemerda_1: -8702196525097748424
-      ataquemerda_2: -1474260062205719332
-      ataquemerda_3: -8582900309337623617
-      ataquemerda_4: 5267279933497444465
-      ataquemerda_5: -5305159736738033516
-      ataquemerda_6: 7832398574479618885
-      ataquemerda_7: 5898855455270814031
-      ataquemerda_8: 729778644764164398
+      sequence_2_0: 7843828072217357176
+      sequence_2_1: 262765123494569152
+      sequence_2_10: -9037406462815327565
+      sequence_2_11: -9022273029497757121
+      sequence_2_12: 4015501543192842874
+      sequence_2_13: 6770977272368532750
+      sequence_2_14: -4787417539832465710
+      sequence_2_15: -4847856547540253785
+      sequence_2_2: 2143445788693924781
+      sequence_2_3: -8874611175349672304
+      sequence_2_4: 3586301582184510727
+      sequence_2_5: 5810643696044574492
+      sequence_2_6: -8994114635375448759
+      sequence_2_7: -3059447568813887583
+      sequence_2_8: 2818771520046814028
+      sequence_2_9: 1701556731196085882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

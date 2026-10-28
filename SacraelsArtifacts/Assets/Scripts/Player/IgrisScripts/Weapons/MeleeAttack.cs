@@ -3,25 +3,17 @@ using System.Collections;
 
 public class MeleeAttack : MonoBehaviour
 {
-    public GameObject attackArea;
 
     public bool attacking { get; private set; } = false;
 
-    public float timeToAttack = 0.6f;
+    public bool CanCombo1 = false;
 
-    public float timeToActivateAttackArea = 0.2f;
-
-
-    private float timer = 0f;
+    public bool CanCombo2 = false;
     private Animator animator;
 
     private void Start()
     {
-        attackArea = transform.Find("AttackArea").gameObject;
-
         animator = GetComponentInChildren<Animator>();
-
-        attackArea.SetActive(false);
     }
 
     void Update()
@@ -31,37 +23,44 @@ public class MeleeAttack : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetButtonDown("Fire1") && !attacking)
+        if (Input.GetButtonDown("Fire1") && !CanCombo1 && !CanCombo2)
         {
-            attacking = true;
-
-            timer = 0f;
-
-            animator.SetBool("IsAttacking", true);
-
-            StartCoroutine(SetAttackAreaActive());
+            StartCoroutine(AttackCombo());
         }
-
-        if (attacking)
+        else if(Input.GetButtonDown("Fire1") && CanCombo1 && !CanCombo2)
         {
-            timer += Time.deltaTime;
-
-            if (timer >= timeToAttack)
-            {
-                timer = 0f;
-                attacking = false;
-                animator.SetBool("IsAttacking", false);
-            }
+            StartCoroutine(AttackCombo1());
+        }
+        else if(Input.GetButtonDown("Fire1") && !CanCombo1 && CanCombo2)
+        {
+            AttackCombo2();
         }
     }
 
-    IEnumerator SetAttackAreaActive()
+    IEnumerator AttackCombo()
     {
-        attackArea.SetActive(true);
+        animator.SetTrigger("Attack1");
 
-        yield return new WaitForSeconds(timeToActivateAttackArea);
+        CanCombo1 = true;
 
-        attackArea.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+
+        CanCombo1= false;
     }
-    
+    IEnumerator AttackCombo1()
+    {
+        animator.SetTrigger("Attack2");
+
+        CanCombo2 = true;
+
+        yield return new WaitForSeconds(0.8f);
+
+        CanCombo2 = false;
+    }
+    private void AttackCombo2()
+    {
+        animator.SetTrigger("Attack3");
+    }
+
+
 }
