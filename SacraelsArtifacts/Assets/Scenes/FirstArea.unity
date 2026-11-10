@@ -3419,7 +3419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagerScript
   sceneName: MountainTop
-  spawnPointName: SpawnPoint
 --- !u!1 &392971944
 GameObject:
   m_ObjectHideFlags: 0

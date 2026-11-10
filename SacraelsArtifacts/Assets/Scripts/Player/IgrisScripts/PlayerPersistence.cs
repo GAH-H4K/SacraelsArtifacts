@@ -35,16 +35,7 @@ public class PlayerPersistence : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        GameObject spawn = GameObject.Find(spawnName);
-
-
-        if (spawn != null)
-        {
-            //a posiçao do player quando se inicia a cena é igual á spawnName
-            transform.position = spawn.transform.position;
-            spawnName = null;
-        }
-
+        
     }
 
 }
