@@ -3418,7 +3418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2136908c240d9a24f97c770b5168a175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagerScript
-  sceneName: CutsceneRockSlide
+  sceneName: MountainTop
   spawnPointName: SpawnPoint
 --- !u!1 &392971944
 GameObject:

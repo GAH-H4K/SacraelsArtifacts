@@ -43,7 +43,7 @@ public class MeleeAttack : MonoBehaviour
 
         CanCombo1 = true;
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
 
         CanCombo1= false;
     }
@@ -53,7 +53,7 @@ public class MeleeAttack : MonoBehaviour
 
         CanCombo2 = true;
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
 
         CanCombo2 = false;
     }

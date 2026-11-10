@@ -40,6 +40,7 @@ public class PlayerPersistence : MonoBehaviour
 
         if (spawn != null)
         {
+            //a posiçao do player quando se inicia a cena é igual á spawnName
             transform.position = spawn.transform.position;
             spawnName = null;
         }
