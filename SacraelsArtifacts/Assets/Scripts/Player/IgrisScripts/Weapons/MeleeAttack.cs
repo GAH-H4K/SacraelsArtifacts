@@ -23,17 +23,24 @@ public class MeleeAttack : MonoBehaviour
 
     public void Attack()
     {
-        if (Input.GetButtonDown("Fire1") && !CanCombo1 && !CanCombo2)
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.J))
         {
-            StartCoroutine(AttackCombo());
-        }
-        else if(Input.GetButtonDown("Fire1") && CanCombo1 && !CanCombo2)
-        {
-            StartCoroutine(AttackCombo1());
-        }
-        else if(Input.GetButtonDown("Fire1") && !CanCombo1 && CanCombo2)
-        {
-            AttackCombo2();
+            if (!CanCombo1 && !CanCombo2)
+            {
+                StartCoroutine(AttackCombo());
+            }
+            else if (CanCombo1 && !CanCombo2)
+            {
+                StartCoroutine(AttackCombo1());
+            }
+            else if (!CanCombo1 && CanCombo2)
+            {
+                AttackCombo2();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
@@ -43,7 +50,7 @@ public class MeleeAttack : MonoBehaviour
 
         CanCombo1 = true;
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
 
         CanCombo1= false;
     }
@@ -53,7 +60,7 @@ public class MeleeAttack : MonoBehaviour
 
         CanCombo2 = true;
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
 
         CanCombo2 = false;
     }

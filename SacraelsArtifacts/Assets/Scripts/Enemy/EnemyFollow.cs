@@ -12,6 +12,8 @@ public class EnemyFollow : MonoBehaviour
 
     private Vector3 OriginalScale;
 
+    public EnemyHealth healthScript;
+
     void Start()
     {
         StartCoroutine(FindPlayer());
@@ -33,20 +35,21 @@ public class EnemyFollow : MonoBehaviour
     }
     public void FollowPlayer()
     {
-        transform.position = Vector3.MoveTowards(transform.position,
-            PlayerPosition.position,
-            EnemySpeed * Time.deltaTime);
-
-        if (transform.position.x > PlayerPosition.position.x)
+        if (healthScript.canMove == true)
         {
-            transform.localScale = new Vector3(OriginalScale.x, OriginalScale.y, OriginalScale.z);
-        }
-        else if (transform.position.x < PlayerPosition.position.x)
-        {
-            transform.localScale = new Vector3(-OriginalScale.x, OriginalScale.y, OriginalScale.z);
-        }
+            transform.position = Vector3.MoveTowards(transform.position,
+                PlayerPosition.position,
+                EnemySpeed * Time.deltaTime);
 
-
+            if (transform.position.x > PlayerPosition.position.x)
+            {
+                transform.localScale = new Vector3(OriginalScale.x, OriginalScale.y, OriginalScale.z);
+            }
+            else if (transform.position.x < PlayerPosition.position.x)
+            {
+                transform.localScale = new Vector3(-OriginalScale.x, OriginalScale.y, OriginalScale.z);
+            }
+        }
     }
     IEnumerator FindPlayer()
     {

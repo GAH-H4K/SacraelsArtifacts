@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private bool canMove = true;
+
     public float HitStopDuration = 0.1f; 
 
     [SerializeField] private float knockbackForce = 5f;
@@ -39,11 +41,24 @@ public class EnemyHealth : MonoBehaviour
 
         GameFeelManager.Instance.HitStop(HitStopDuration);
 
+        //corrotina pra ele parar quando receber hit
+
+        StartCoroutine(StopOnHit());
+
         if (health <= 0)
         {
             StartCoroutine(Die());
             animator.SetBool("IsDead", true);
         }
+    }
+
+    IEnumerator StopOnHit()
+    {
+        canMove = false;
+
+        yield return new WaitForSeconds(0.5f);
+
+        canMove = true;
     }
 
     IEnumerator FlashRed()
