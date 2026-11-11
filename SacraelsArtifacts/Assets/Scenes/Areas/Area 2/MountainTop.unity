@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 37d557e12d9655e4d932dd636f88388d, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -225,8 +225,8 @@ Transform:
   m_GameObject: {fileID: 207789225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -78.8085, y: -20.1282, z: 0}
-  m_LocalScale: {x: 164.54834, y: 3.0620546, z: 1}
+  m_LocalPosition: {x: -78.8085, y: -20.8918, z: 0}
+  m_LocalScale: {x: 164.54834, y: 1.535008, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 425928009}
@@ -453,12 +453,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307520357}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.8, y: -24.3, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -358.80002, y: -10.044179, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1706415796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425928008
 GameObject:
@@ -1167,7 +1167,7 @@ Transform:
   m_GameObject: {fileID: 1706415795}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 411.6, y: -14.25582, z: 0}
+  m_LocalPosition: {x: 411.6, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1176,6 +1176,7 @@ Transform:
   - {fileID: 1655719000}
   - {fileID: 103525102}
   - {fileID: 291951358}
+  - {fileID: 307520360}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1955785335
@@ -1206,7 +1207,7 @@ Transform:
   m_GameObject: {fileID: 1955785335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -91.2, y: -11.6, z: 0}
+  m_LocalPosition: {x: -91.44, y: -13.24, z: 0}
   m_LocalScale: {x: 7.909529, y: 6.667078, z: 5.9409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1331,7 +1332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::house
   InteractTXT: {fileID: 812255398}
   CanEnter: 0
-  houseSceneName: FirstArea
+  houseSceneName: AlchemistHouse
 --- !u!1 &2043769518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,4 +1440,3 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1706415796}
-  - {fileID: 307520360}

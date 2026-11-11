@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private bool canMove = true;
+    public bool canMove = true;
 
     public float HitStopDuration = 0.1f; 
 
@@ -74,7 +74,7 @@ public class EnemyHealth : MonoBehaviour
     {
         AttackScript.enabled = false; 
         yield return new WaitForSeconds(2f);
-       Destroy(gameObject);
+        Destroy(gameObject);
     }
     
 }

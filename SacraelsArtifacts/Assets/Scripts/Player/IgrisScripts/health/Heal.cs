@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Heal : MonoBehaviour
@@ -6,9 +7,10 @@ public class Heal : MonoBehaviour
 
     public int HealAmount = 4;
     public int HealUses = 4;
-    public 
+    public float CooldownToHeal = 2f;
+    public bool CanHeal = true;
 
-    void Update()
+    public void Update()
     {
 
         CallHeal();
@@ -21,9 +23,24 @@ public class Heal : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q) && HealUses > 0)
         {
-            playerHealth.Heal(HealAmount);
-            HealUses --;
+            if (CanHeal == true)
+            {
+                StartCoroutine(HealCooldown());
+            }
         }
 
+    }
+
+    private IEnumerator HealCooldown()
+    {
+        CanHeal = false;
+
+        playerHealth.Heal(HealAmount);
+
+        HealUses--;
+
+        yield return new WaitForSeconds(CooldownToHeal);
+
+        CanHeal = true;
     }
 }

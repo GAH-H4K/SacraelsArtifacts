@@ -1,16 +1,22 @@
-using UnityEngine;
 using Unity.Cinemachine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class CameraPersistence : MonoBehaviour
 {
     public static CameraPersistence instance;
     private CinemachineConfiner2D confiner2D;
     public Collider2D bounds;
+    CinemachineCamera CineCam;
+    
 
 
     void Awake()
     {
+        CineCam = GetComponent<CinemachineCamera>();
+
+
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -35,7 +41,15 @@ public class CameraPersistence : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         UpdateCameraBounds(bounds);
-        Debug.Log("ssss");
+        UpdateCameraScale();
+    }
+
+    public void UpdateCameraScale()
+    {
+        Camera mainCam = Camera.main;
+
+        CineCam.Lens.OrthographicSize = mainCam.orthographicSize;
+
     }
 
     public void UpdateCameraBounds(Collider2D newBounds)
@@ -45,7 +59,7 @@ public class CameraPersistence : MonoBehaviour
         if (boundsObject == null)
         {
             Destroy(gameObject);
-            Debug.Log("ssssaaa");
+            Debug.Log("n tem beirada pra camera seu bobao");
         }
 
         if (confiner2D == null)
