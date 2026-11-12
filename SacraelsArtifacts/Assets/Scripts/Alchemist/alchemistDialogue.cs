@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class alchemistDialogue : MonoBehaviour
 {
-    [Header("Isso aq é o script do trigger")]
+    [Header("Isso aq ï¿½ o script do trigger")]
 
     public bool CanTalk = false;
     
     public GameObject CanvasDialogue;
     void Update()
     {
-        if(CanTalk == true)
+        if(CanTalk == true && Input.GetKeyDown(KeyCode.E))
         {
             StartDialogue();
         }
