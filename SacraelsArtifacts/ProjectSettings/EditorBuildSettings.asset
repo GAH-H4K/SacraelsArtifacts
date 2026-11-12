@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Areas/Area 2/MountainTop.unity
     guid: ae813e555d6119847b08ccde16679903
   - enabled: 1
-    path: Assets/Scenes/Areas/Caves.unity
+    path: Assets/Scenes/Areas/Area 4/Caves.unity
     guid: e098650a4b8ed424187998863a6448ab
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
