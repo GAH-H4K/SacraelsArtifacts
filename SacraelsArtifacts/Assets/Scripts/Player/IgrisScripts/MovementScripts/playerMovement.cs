@@ -27,8 +27,14 @@ public class playerMovement : MonoBehaviour
         currentSpeed = speed;
 
         ground = GetComponentInChildren<Grounded>();
+
+        
     }
 
+    public void OnEnable()
+    {
+        StartMoving();
+    }
     void Update()
     {
         Jump();
@@ -151,5 +157,20 @@ public class playerMovement : MonoBehaviour
             animator.SetBool("IsJumping", false);
         }
     }
+
+    public void StopMoving()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+    }
+
+    public void StartMoving()
+    {
+        rb.constraints = RigidbodyConstraints2D.None;
+    }
+    public void OnDisabled()
+    {
+        StopMoving();
+    }
+
 }
 

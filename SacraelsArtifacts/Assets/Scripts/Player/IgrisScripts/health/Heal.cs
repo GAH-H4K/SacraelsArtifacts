@@ -21,9 +21,9 @@ public class Heal : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Q) && HealUses > 0)
+        if (Input.GetKeyDown(KeyCode.Q) && HealUses > 0) 
         {
-            if (CanHeal == true)
+            if (CanHeal == true && playerHealth.health > playerHealth._healthMax)
             {
                 StartCoroutine(HealCooldown());
             }

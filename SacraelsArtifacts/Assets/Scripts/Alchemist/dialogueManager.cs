@@ -21,7 +21,7 @@ public class dialogueManager : MonoBehaviour
     public alchemistDialogue alchemistDialogueScript;
 
 
-    private void Start()
+    private void OnEnable()
     {
         StartDialogue();
     }
