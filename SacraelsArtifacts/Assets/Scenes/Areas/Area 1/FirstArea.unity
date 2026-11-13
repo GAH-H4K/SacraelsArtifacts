@@ -13991,6 +13991,7 @@ GameObject:
   - component: {fileID: 1310846772}
   - component: {fileID: 1310846771}
   - component: {fileID: 1310846777}
+  - component: {fileID: 1310846778}
   m_Layer: 8
   m_Name: PlayerIgris
   m_TagString: Player
@@ -14143,6 +14144,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8637a27d66aa6b744b9279a6d05204a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPersistence
+--- !u!114 &1310846778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310846770}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2acc881fe09a24c86ee525d7ce78e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Heal
+  playerHealth: {fileID: 1310846771}
+  HealAmount: 4
+  HealUses: 4
+  CooldownToHeal: 2
+  CanHeal: 1
 --- !u!1 &1320029425
 GameObject:
   m_ObjectHideFlags: 0

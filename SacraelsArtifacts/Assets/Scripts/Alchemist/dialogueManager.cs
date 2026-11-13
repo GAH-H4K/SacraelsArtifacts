@@ -49,9 +49,9 @@ public class dialogueManager : MonoBehaviour
     {
         if (TypeTextCoroutine != null && currentLine <= Lines.Length)
         {
-            dialogueText.text = Lines[currentLine];
-
             StopCoroutine(TypeTextCoroutine);
+
+            dialogueText.text = Lines[currentLine];
 
             currentLine++;
         }
@@ -60,12 +60,14 @@ public class dialogueManager : MonoBehaviour
         if (currentLine >= Lines.Length)
         {
             alchemistDialogueScript.StopDialogue();
+
+
             return;
         }
 
         currentFace++;
-        // essa é minha linha favorita
-        StartCoroutine(TypeText(Lines[currentLine]));
+
+        TypeTextCoroutine = StartCoroutine(TypeText(Lines[currentLine]));
 
         foreach(GameObject obj in Faces)
         {
