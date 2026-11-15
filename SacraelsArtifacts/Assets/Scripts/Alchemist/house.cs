@@ -34,7 +34,7 @@ public class house : MonoBehaviour
         {
             InteractTXT.SetActive(true);
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.W))
             {
                 EnterHouse();
             }

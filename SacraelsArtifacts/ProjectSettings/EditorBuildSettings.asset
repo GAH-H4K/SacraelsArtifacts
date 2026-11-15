@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Areas/Area 1/FirstArea.unity
     guid: 465c73df127d91043bab7d9703ff38de
   - enabled: 1
+    path: Assets/Scenes/Areas/Area 1/SecretArea1.unity
+    guid: 245ff2a81ca17804cb9180a9cf08830c
+  - enabled: 1
     path: Assets/Scenes/Areas/Area 2/MountainTop.unity
     guid: ae813e555d6119847b08ccde16679903
   - enabled: 1
@@ -26,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Areas/Area 3/BeforeCaves.unity
     guid: 84561c7c1e1988a448be294a8125be9b
+  - enabled: 1
+    path: Assets/Scenes/Areas/Area 3/BottomRight.unity
+    guid: a9d69092355c4234e9d93a23901dbcb3
   - enabled: 1
     path: Assets/Scenes/Areas/Area 4/Caves.unity
     guid: e098650a4b8ed424187998863a6448ab

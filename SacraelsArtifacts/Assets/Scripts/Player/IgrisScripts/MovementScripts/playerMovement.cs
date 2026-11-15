@@ -165,7 +165,6 @@ public class playerMovement : MonoBehaviour
 
     public void StartMoving()
     {
-        rb.constraints = RigidbodyConstraints2D.None;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 

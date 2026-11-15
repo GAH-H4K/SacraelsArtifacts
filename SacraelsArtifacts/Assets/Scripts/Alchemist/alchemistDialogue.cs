@@ -9,10 +9,10 @@ public class alchemistDialogue : MonoBehaviour
     
     public GameObject CanvasDialogue;
 
+    public GameObject InteractTXT;
+
     public GameObject CanvasDialogueNeutral;
     //esse dialogue neutro é oq ele fala quando tu ja fez asmissao ou sla oq;
-
-    public bool firstDialogueHappened;
 
     public bool playerCanUpgrade;
 
@@ -27,8 +27,17 @@ public class alchemistDialogue : MonoBehaviour
 
     public dialogueManager dialogueManager;
 
+    public GameManager gameManagerScript;
+
     private void Start()
     {
+        GameObject gameManagerObject = GameObject.FindWithTag("GameManager");
+
+        if(gameManagerObject != null)
+        {
+            gameManagerScript = gameManagerObject.GetComponent<GameManager>();
+        }
+
         GameObject player = GameObject.FindWithTag("Player");
 
         if (player != null)
@@ -44,11 +53,11 @@ public class alchemistDialogue : MonoBehaviour
 
     void Update()
     {
-        if(CanTalk == true && Input.GetKeyDown(KeyCode.E) && !firstDialogueHappened)
+        if(CanTalk == true && Input.GetKeyDown(KeyCode.E) && gameManagerScript.UnlockedHeal == false)
         {
             StartFirstDialogue();
         }
-        else if(CanTalk == true && Input.GetKeyDown(KeyCode.E) && firstDialogueHappened)
+        else if(CanTalk == true && Input.GetKeyDown(KeyCode.E) && gameManagerScript.UnlockedHeal == true)
         {
             StartNeutraltDialogue();
         }
@@ -87,7 +96,7 @@ public class alchemistDialogue : MonoBehaviour
         CanvasDialogue.SetActive(false);
         CanvasDialogueNeutral.SetActive(false);
 
-        firstDialogueHappened = true;
+        
 
 
         playerMovement.StartMoving();
@@ -95,6 +104,8 @@ public class alchemistDialogue : MonoBehaviour
         playerAttack.enabled = true;
         playerHeal.enabled = true;
         playerCanvas.SetActive(true);
+
+        gameManagerScript.UnlockedHeal = true;
 
     }
 
@@ -105,6 +116,8 @@ public class alchemistDialogue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             CanTalk = true;
+
+            InteractTXT.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -113,7 +126,8 @@ public class alchemistDialogue : MonoBehaviour
         {
             CanTalk = false;
 
-            StopDialogue();//acho q n precisa disso mas vai q ne
+            InteractTXT.SetActive(false);
+
         }
     }
 

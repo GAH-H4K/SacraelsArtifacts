@@ -5,9 +5,16 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public bool UnlockedHeal;
+    public bool UnlockedHeal = false;
 
-    public bool DefeteadGolem;
+    public bool DefeteadGolem = false;
+
+    private void OnEnable()
+    {
+       UnlockedHeal = false;
+
+       DefeteadGolem = false;
+    }
 
     private void Awake()
     {
