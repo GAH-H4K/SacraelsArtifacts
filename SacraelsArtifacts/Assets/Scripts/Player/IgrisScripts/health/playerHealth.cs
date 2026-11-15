@@ -15,6 +15,7 @@ public class playerHealth : MonoBehaviour
     [SerializeField] public int InvincibilityFlashes = 4;
 
     public PauseMenu PauseScript;
+    public LifeBar lifeBar;
 
     private SpriteRenderer spriteRend;
     private Rigidbody2D rb;
@@ -40,6 +41,7 @@ public class playerHealth : MonoBehaviour
     public void TakeDamage(int damage, Vector2 knockbackDirection, float knockbackForce)
     {
         health -= damage;
+        lifeBar.StartCoroutine(lifeBar.Flash());
 
         if (health <= 0)
         {
@@ -47,8 +49,7 @@ public class playerHealth : MonoBehaviour
         }
         else
         {
-
-
+            
             StartCoroutine(Invincibility());
 
             rb.linearVelocity = Vector2.zero;

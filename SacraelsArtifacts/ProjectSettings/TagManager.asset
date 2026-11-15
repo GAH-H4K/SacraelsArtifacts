@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - CameraBounds
   - Camera
+  - PlayerCanvas
+  - GameManager
   layers:
   - Default
   - TransparentFX

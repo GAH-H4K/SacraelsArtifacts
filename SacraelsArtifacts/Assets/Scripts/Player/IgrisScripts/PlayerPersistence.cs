@@ -35,7 +35,7 @@ public class PlayerPersistence : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        
+        Debug.Log(scene.name);
     }
 
 }

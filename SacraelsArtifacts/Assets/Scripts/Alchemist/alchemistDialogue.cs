@@ -59,6 +59,7 @@ public class alchemistDialogue : MonoBehaviour
         CanvasDialogue.SetActive(true);
 
 
+        playerMovement.StopMoving();
         playerMovement.enabled = false;
         playerAttack.enabled = false;
         playerHeal.enabled = false;
@@ -74,7 +75,7 @@ public class alchemistDialogue : MonoBehaviour
 
         CanvasDialogueNeutral.SetActive(true);
 
-
+        playerMovement.StopMoving();
         playerMovement.enabled = false;
         playerAttack.enabled = false;
         playerHeal.enabled = false;
@@ -89,6 +90,7 @@ public class alchemistDialogue : MonoBehaviour
         firstDialogueHappened = true;
 
 
+        playerMovement.StartMoving();
         playerMovement.enabled = true;
         playerAttack.enabled = true;
         playerHeal.enabled = true;
