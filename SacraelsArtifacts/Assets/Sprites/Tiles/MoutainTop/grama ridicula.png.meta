@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 02dc75fb74e62444798945467228536f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8802340096493281371
+    second: grama ridicula_0
+  - first:
+      213: -6183405334586749502
+    second: grama ridicula_1
+  - first:
+      213: 1642604944491629476
+    second: grama ridicula_2
+  - first:
+      213: 6136827070636031309
+    second: grama ridicula_3
+  - first:
+      213: 4832542457475628624
+    second: grama ridicula_4
+  - first:
+      213: -7528479632445285868
+    second: grama ridicula_5
+  - first:
+      213: 6690904290818039682
+    second: grama ridicula_6
+  - first:
+      213: -5979920623186354394
+    second: grama ridicula_7
+  - first:
+      213: -221036803417958894
+    second: grama ridicula_8
+  - first:
+      213: 1969605297598667542
+    second: grama ridicula_9
+  - first:
+      213: -4101180959903677819
+    second: grama ridicula_10
+  - first:
+      213: -8592610711041650515
+    second: grama ridicula_11
+  - first:
+      213: 266320820250617936
+    second: grama ridicula_12
+  - first:
+      213: -1875666323712883198
+    second: grama ridicula_13
+  - first:
+      213: 6171547209013101974
+    second: grama ridicula_14
+  - first:
+      213: 7637612087485409241
+    second: grama ridicula_15
+  - first:
+      213: -6842638294757359630
+    second: grama ridicula_16
+  - first:
+      213: 6571800454750294932
+    second: grama ridicula_17
+  - first:
+      213: 2078315966365567109
+    second: grama ridicula_18
+  - first:
+      213: -3594006152883992083
+    second: grama ridicula_19
+  - first:
+      213: -8761782256648215562
+    second: grama ridicula_20
+  - first:
+      213: 4287571702489489281
+    second: grama ridicula_21
+  - first:
+      213: 7644345774475950785
+    second: grama ridicula_22
+  - first:
+      213: -1614889353694242457
+    second: grama ridicula_23
+  - first:
+      213: -8283363438389437207
+    second: grama ridicula_24
+  - first:
+      213: -8861502143004794425
+    second: grama ridicula_25
+  - first:
+      213: 6671895971519209792
+    second: grama ridicula_26
+  - first:
+      213: -3293584665425188588
+    second: grama ridicula_27
+  - first:
+      213: 7385758096412939980
+    second: grama ridicula_28
+  - first:
+      213: -4481114720822204324
+    second: grama ridicula_29
+  - first:
+      213: -7292021790451751093
+    second: grama ridicula_30
+  - first:
+      213: 8107868984058814244
+    second: grama ridicula_31
+  - first:
+      213: 7177926244030562732
+    second: grama ridicula_32
+  - first:
+      213: -7526114265241740625
+    second: grama ridicula_33
+  - first:
+      213: -5916628302154122207
+    second: grama ridicula_34
+  - first:
+      213: -4656627358871221688
+    second: grama ridicula_35
+  - first:
+      213: 2957101518172807623
+    second: grama ridicula_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grama ridicula_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 287
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50e8a35ea1382a70800000000000000
+      internalID: 8802340096493281371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 287
+        width: 290
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd83b9fb91203aa0800000000000000
+      internalID: -6183405334586749502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 287
+        width: 110
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab49be7e74bbc610800000000000000
+      internalID: 1642604944491629476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_3
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 287
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4df249d4b36a2550800000000000000
+      internalID: 6136827070636031309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 287
+        width: 152
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ef3dbd2c3a01340800000000000000
+      internalID: 4832542457475628624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_5
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 287
+        width: 392
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ad55179a7758790800000000000000
+      internalID: -7528479632445285868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_6
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 287
+        width: 188
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f9858a00edadc50800000000000000
+      internalID: 6690904290818039682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_7
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 287
+        width: 80
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fd1fd40ed030da0800000000000000
+      internalID: -5979920623186354394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_8
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 287
+        width: 254
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2161cf9c238beecf0800000000000000
+      internalID: -221036803417958894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_9
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 287
+        width: 164
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b981f2591755b10800000000000000
+      internalID: 1969605297598667542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_10
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 287
+        width: 98
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582885d55ada517c0800000000000000
+      internalID: -4101180959903677819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_11
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 287
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0552b751ae0c880800000000000000
+      internalID: -8592610711041650515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_12
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 287
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058245fff5922b300800000000000000
+      internalID: 266320820250617936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_13
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 287
+        width: 368
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2064ee19a6b48f5e0800000000000000
+      internalID: -1875666323712883198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_14
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 287
+        width: 158
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69587c30d7db5a550800000000000000
+      internalID: 6171547209013101974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_15
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 287
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d72cce4abf3ef960800000000000000
+      internalID: 7637612087485409241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_16
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 287
+        width: 56
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffb08a89b01a01a0800000000000000
+      internalID: -6842638294757359630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_17
+      rect:
+        serializedVersion: 2
+        x: 3371
+        y: 287
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4935428d1b9b33b50800000000000000
+      internalID: 6571800454750294932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_18
+      rect:
+        serializedVersion: 2
+        x: 3419
+        y: 287
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5880e3a2c59a7dc10800000000000000
+      internalID: 2078315966365567109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_19
+      rect:
+        serializedVersion: 2
+        x: 3455
+        y: 287
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de908c022768f1ec0800000000000000
+      internalID: -3594006152883992083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_20
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 287
+        width: 122
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3a921a575e76680800000000000000
+      internalID: -8761782256648215562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_21
+      rect:
+        serializedVersion: 2
+        x: 3683
+        y: 287
+        width: 188
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f17e33fb3808b30800000000000000
+      internalID: 4287571702489489281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_22
+      rect:
+        serializedVersion: 2
+        x: 4001
+        y: 287
+        width: 194
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cab5ebfafb261a60800000000000000
+      internalID: 7644345774475950785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_23
+      rect:
+        serializedVersion: 2
+        x: 4199
+        y: 287
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7699e7950b2c699e0800000000000000
+      internalID: -1614889353694242457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_24
+      rect:
+        serializedVersion: 2
+        x: 4283
+        y: 287
+        width: 74
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecd65507d49b0d80800000000000000
+      internalID: -8283363438389437207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_25
+      rect:
+        serializedVersion: 2
+        x: 4445
+        y: 287
+        width: 224
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c126dd40ce950580800000000000000
+      internalID: -8861502143004794425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_26
+      rect:
+        serializedVersion: 2
+        x: 4673
+        y: 287
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04123c07906579c50800000000000000
+      internalID: 6671895971519209792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_27
+      rect:
+        serializedVersion: 2
+        x: 4745
+        y: 287
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41968ab6236da42d0800000000000000
+      internalID: -3293584665425188588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_28
+      rect:
+        serializedVersion: 2
+        x: 4787
+        y: 287
+        width: 230
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc698a57bdb7f7660800000000000000
+      internalID: 7385758096412939980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_29
+      rect:
+        serializedVersion: 2
+        x: 5237
+        y: 287
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c586e9347e1efc1c0800000000000000
+      internalID: -4481114720822204324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_30
+      rect:
+        serializedVersion: 2
+        x: 5249
+        y: 287
+        width: 134
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4727bdf0d88dca90800000000000000
+      internalID: -7292021790451751093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_31
+      rect:
+        serializedVersion: 2
+        x: 5405
+        y: 287
+        width: 98
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f9b3832efe48070800000000000000
+      internalID: 8107868984058814244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_32
+      rect:
+        serializedVersion: 2
+        x: 5585
+        y: 287
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1456f73ed1d9360800000000000000
+      internalID: 7177926244030562732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_33
+      rect:
+        serializedVersion: 2
+        x: 5657
+        y: 287
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa144963fedd8790800000000000000
+      internalID: -7526114265241740625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_34
+      rect:
+        serializedVersion: 2
+        x: 5711
+        y: 287
+        width: 170
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cb41628e9e3eda0800000000000000
+      internalID: -5916628302154122207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_35
+      rect:
+        serializedVersion: 2
+        x: 5885
+        y: 287
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a8d17c616506fb0800000000000000
+      internalID: -4656627358871221688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grama ridicula_36
+      rect:
+        serializedVersion: 2
+        x: 5945
+        y: 287
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c16573d92cb90920800000000000000
+      internalID: 2957101518172807623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grama ridicula_0: 8802340096493281371
+      grama ridicula_1: -6183405334586749502
+      grama ridicula_10: -4101180959903677819
+      grama ridicula_11: -8592610711041650515
+      grama ridicula_12: 266320820250617936
+      grama ridicula_13: -1875666323712883198
+      grama ridicula_14: 6171547209013101974
+      grama ridicula_15: 7637612087485409241
+      grama ridicula_16: -6842638294757359630
+      grama ridicula_17: 6571800454750294932
+      grama ridicula_18: 2078315966365567109
+      grama ridicula_19: -3594006152883992083
+      grama ridicula_2: 1642604944491629476
+      grama ridicula_20: -8761782256648215562
+      grama ridicula_21: 4287571702489489281
+      grama ridicula_22: 7644345774475950785
+      grama ridicula_23: -1614889353694242457
+      grama ridicula_24: -8283363438389437207
+      grama ridicula_25: -8861502143004794425
+      grama ridicula_26: 6671895971519209792
+      grama ridicula_27: -3293584665425188588
+      grama ridicula_28: 7385758096412939980
+      grama ridicula_29: -4481114720822204324
+      grama ridicula_3: 6136827070636031309
+      grama ridicula_30: -7292021790451751093
+      grama ridicula_31: 8107868984058814244
+      grama ridicula_32: 7177926244030562732
+      grama ridicula_33: -7526114265241740625
+      grama ridicula_34: -5916628302154122207
+      grama ridicula_35: -4656627358871221688
+      grama ridicula_36: 2957101518172807623
+      grama ridicula_4: 4832542457475628624
+      grama ridicula_5: -7528479632445285868
+      grama ridicula_6: 6690904290818039682
+      grama ridicula_7: -5979920623186354394
+      grama ridicula_8: -221036803417958894
+      grama ridicula_9: 1969605297598667542
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
