@@ -9,8 +9,12 @@ public class GameManager : MonoBehaviour
 
     public bool DefeteadGolem = false;
 
+    public bool ColetedFirstArtifact;
+
     private void OnEnable()
     {
+       ColetedFirstArtifact = false;
+
        UnlockedHeal = false;
 
        DefeteadGolem = false;
