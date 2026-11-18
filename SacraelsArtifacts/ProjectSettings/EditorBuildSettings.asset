@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Areas/Area 3/BottomRight.unity
     guid: a9d69092355c4234e9d93a23901dbcb3
   - enabled: 1
+    path: Assets/Scenes/Areas/Area 3/FrontMountain.unity
+    guid: 6b2b2ff0592202046b8828a5d21f30ae
+  - enabled: 1
     path: Assets/Scenes/Areas/Area 4/Caves.unity
     guid: e098650a4b8ed424187998863a6448ab
   m_configObjects:
