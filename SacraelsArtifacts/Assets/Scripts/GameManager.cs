@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public bool ColetedFirstArtifact;
 
+    public SavePoint savePointScript;
+
     private void OnEnable()
     {
        ColetedFirstArtifact = false;
@@ -31,5 +33,16 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+        
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("balls");
+
+        savePointScript.SavePointScene = scene.name;
     }
 }
