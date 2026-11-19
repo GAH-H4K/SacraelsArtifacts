@@ -1273,8 +1273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -816.2, y: -567.82825}
-  m_SizeDelta: {x: 169.318, y: 39.05}
+  m_AnchoredPosition: {x: -809.2, y: -551.3}
+  m_SizeDelta: {x: 370.962, y: 137.598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &812255400
 Animator:
@@ -1327,8 +1327,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283387727
-  m_fontColor: {r: 0.3113208, g: 0.3113208, b: 0.3113208, a: 1}
+    rgba: 4283716692
+  m_fontColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1345,8 +1345,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 113.5
+  m_fontSizeBase: 113.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.5220909, w: -0.19821456}
+  m_margin: {x: 0, y: 0, z: -161.83514, w: -0.19821456}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2843,8 +2843,8 @@ Transform:
   m_GameObject: {fileID: 1955785335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -96.95, y: -17.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -94.2442, y: -16.64, z: 0}
+  m_LocalScale: {x: 1.3214409, y: 1.253566, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2043769519}
@@ -2884,7 +2884,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.2132492, y: -1.3793392}
+  m_Offset: {x: 1.246413, y: -1.1711758}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2894,7 +2894,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4017792, y: 2.2307644}
+  m_Size: {x: 2.3302565, y: 2.9940345}
   m_EdgeRadius: 0
 --- !u!212 &1955785338
 SpriteRenderer:

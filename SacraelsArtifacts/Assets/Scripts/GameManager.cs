@@ -13,8 +13,17 @@ public class GameManager : MonoBehaviour
 
     public SavePoint savePointScript;
 
+    public Transform SaveTransform;
+
+    public Transform playerTransform;
+
+    public string SaveScene = "";
+
+
     private void OnEnable()
     {
+       
+
        ColetedFirstArtifact = false;
 
        UnlockedHeal = false;
@@ -41,8 +50,20 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("balls");
-
         savePointScript.SavePointScene = scene.name;
+    }
+
+    public void BackOnSave()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        
+        if(player != null)
+        {
+            playerTransform = player.GetComponent<Transform>();
+        }
+
+        playerTransform = SaveTransform;
+
+        SceneManager.LoadScene(SaveScene); 
     }
 }
