@@ -13,6 +13,8 @@ public class BossHealth : MonoBehaviour
 
     public BossHandAttack BossHands;
 
+    public GameObject stalagmiteFromAbove;
+
     public bool isArmored = true;
 
     private int currentParticle = 0;
@@ -25,8 +27,17 @@ public class BossHealth : MonoBehaviour
 
     public int flashCount = 0;
 
+    public GameManager gameManagerScript;
+
     void Start()
     {
+        GameObject gameManagerObject = GameObject.FindWithTag("GameManager");
+
+        if (gameManagerObject != null)
+        {
+            gameManagerScript = gameManagerObject.GetComponent<GameManager>();
+        }
+
         BossHands = GetComponentInChildren<BossHandAttack>();
 
         health = MaxHealth;
@@ -54,6 +65,7 @@ public class BossHealth : MonoBehaviour
 
         if (health <= secondPhaseHealth && isArmored == true)
         {
+            stalagmiteFromAbove.SetActive(true);
 
             BossArmored.SetActive(false);
 
@@ -83,6 +95,8 @@ public class BossHealth : MonoBehaviour
     }
     public void Die()
     {
+        stalagmiteFromAbove.SetActive(false);
+        gameManagerScript.DefeteadGolem = true;
         BossHands.Die();
         BossActivation.OpenBossFightConfiner();
         animator.SetBool("BossDie", true);

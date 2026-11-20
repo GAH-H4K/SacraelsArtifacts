@@ -9,6 +9,7 @@ TagManager:
   - Camera
   - PlayerCanvas
   - GameManager
+  - Projectiles
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Ground
   - Enemy
   - Player
-  - 
+  - Projectile
   - 
   - 
   - 

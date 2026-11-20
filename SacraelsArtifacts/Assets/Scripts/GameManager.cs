@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public bool ColetedFirstArtifact;
 
+    public bool ColetedSecondArtifact;
+
     public SavePoint savePointScript;
 
     public Transform SaveTransform;
@@ -22,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-       
+        ColetedSecondArtifact = false;
 
        ColetedFirstArtifact = false;
 
