@@ -465,7 +465,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 2768240639
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.6431373}
+  m_fontColor: {r: 1, g: 0.63529414, b: 0.83921576, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1899,8 +1899,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -126, y: 306}
-  m_SizeDelta: {x: 576.9, y: 168.16}
+  m_AnchoredPosition: {x: -170, y: 344.4}
+  m_SizeDelta: {x: 430, y: 102.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883981107
 MonoBehaviour:
@@ -1922,7 +1922,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Made by:\n\n\nArthur gabriel - Programador \n&\nMatteo raminhos -  Artista "
+  m_text: "Made by:\t\t\t\t\t\t\t\t\t\t\t\nArthur Gabriel - Level Design/Programer\n&\nMatteo
+    Ramos - Envrionment Designer||Designer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e48d81020762c7946ac70f95631c3c78, type: 2}
   m_sharedMaterial: {fileID: 3403671416660078228, guid: e48d81020762c7946ac70f95631c3c78, type: 2}
@@ -1944,13 +1945,13 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 97690656
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2224,7 +2225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagerScript
   sceneName: Menu
-  spawnPointName: 
 --- !u!4 &983834544
 Transform:
   m_ObjectHideFlags: 0
