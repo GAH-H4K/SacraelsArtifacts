@@ -12544,6 +12544,7 @@ MonoBehaviour:
   UnlockedHeal: 0
   DefeteadGolem: 0
   ColetedFirstArtifact: 0
+  ColetedSecondArtifact: 0
   savePointScript: {fileID: 0}
   SaveTransform: {fileID: 0}
   playerTransform: {fileID: 0}
