@@ -30,7 +30,7 @@ public class BirdsHealth : MonoBehaviour
              CurrentHealth -= Damage;
         }
 
-        if( CurrentHealth == 0)
+        if( CurrentHealth <= 0)
         {
             Die();
         }
