@@ -98,9 +98,9 @@ public class playerHealth : MonoBehaviour
 
     public void Die()
     {
-        rb.linearVelocity = Vector2.zero;
-
         _playerMovement.enabled = false;
+
+        rb.linearVelocity = Vector2.zero;
 
         meleeAttack.enabled = false;
 
@@ -109,6 +109,19 @@ public class playerHealth : MonoBehaviour
         canvasDeath.SetActive(true);
 
         PauseScript.CanPause = false;
+    }
+
+    public void Revive()
+    {
+        _playerMovement.enabled = true;
+
+        meleeAttack.enabled = true;
+
+        animator.SetBool("IsDead", false);
+
+        canvasDeath.SetActive(false);
+
+        PauseScript.CanPause = true;
     }
 
 }

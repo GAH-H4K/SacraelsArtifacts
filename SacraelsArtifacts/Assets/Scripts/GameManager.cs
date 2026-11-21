@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool UnlockedHeal = false;
 
     public bool DefeteadGolem = false;
+
+    public bool DefeteadBirds = false;
 
     public bool ColetedFirstArtifact;
 
@@ -22,15 +25,23 @@ public class GameManager : MonoBehaviour
     public string SaveScene = "";
 
 
-    private void OnEnable()
+    private void ResetGame()
     {
         ColetedSecondArtifact = false;
 
-       ColetedFirstArtifact = false;
+        ColetedFirstArtifact = false;
 
-       UnlockedHeal = false;
+        UnlockedHeal = false;
 
-       DefeteadGolem = false;
+        DefeteadGolem = false;
+
+        DefeteadBirds = false;
+
+       
+    }
+    private void OnEnable()
+    {
+        ResetGame();
     }
 
     private void Awake()

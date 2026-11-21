@@ -111,4 +111,9 @@ public class BirdsController : MonoBehaviour
 
         CanChooseAttack = true;
     }
+
+    public void FlyAway()
+    {
+       
+    }
 }

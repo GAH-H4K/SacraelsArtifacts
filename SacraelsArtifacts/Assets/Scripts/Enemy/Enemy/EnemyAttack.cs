@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
+
+    public int Damage = 1;
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -15,7 +17,7 @@ public class EnemyAttack : MonoBehaviour
             {
                 Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
                 float knockbackForce = 5f; 
-                playerHealth.TakeDamage(1, knockbackDirection, knockbackForce);
+                playerHealth.TakeDamage(Damage, knockbackDirection, knockbackForce);
             }
 
            
