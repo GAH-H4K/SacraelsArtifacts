@@ -111,7 +111,7 @@ TextureImporter:
         width: 34
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 492
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -142,6 +142,28 @@ TextureImporter:
       bones: []
       spriteID: 74ba69b4d61b1e580800000000000000
       internalID: -8799557113927521465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 006-pillar_2
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 55
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c3d79a9024f9845a5008efc7c91025
+      internalID: -1981898709
       vertices: []
       indices: 
       edges: []
@@ -162,6 +184,7 @@ TextureImporter:
     nameFileIdTable:
       006-pillar_0: 469277616736001425
       006-pillar_1: -8799557113927521465
+      006-pillar_2: -1981898709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
