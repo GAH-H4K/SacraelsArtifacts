@@ -4095,7 +4095,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49073cd40b0a8304283b677e876a9b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
-  Damage: 1
 --- !u!114 &635827007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6679,17 +6678,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280548226}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1733481920}
-  m_Father: {fileID: 1455748961}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 392.8401, y: 557.91}
+  m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1286493397
@@ -7395,8 +7394,7 @@ Transform:
   m_LocalPosition: {x: 567.16, y: -17.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1280548230}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1455748962
@@ -8547,7 +8545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49073cd40b0a8304283b677e876a9b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
-  Damage: 1
 --- !u!114 &1640589053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11354,3 +11351,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1903864293}
   - {fileID: 1455748961}
+  - {fileID: 1280548230}
