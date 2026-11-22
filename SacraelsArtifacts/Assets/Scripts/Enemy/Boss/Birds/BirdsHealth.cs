@@ -6,6 +6,9 @@ public class BirdsHealth : MonoBehaviour
     public BirdsController birdsController;
 
     public GameManager gameManagerScript;
+    public DamagedParticle damagedParticleScript;
+
+    public Animator TreeAnimator;
 
     public int MaxHealth;
     public int CurrentHealth;
@@ -13,9 +16,18 @@ public class BirdsHealth : MonoBehaviour
     public GameObject BrokenTree;
     public GameObject Tree;
 
-    
+    public Transform particlesSpawnPoint;
+
+    private void Update()
+    {
+        
+    }
+
+
+
     void Start()
     {
+
         GameObject gameManagerObject = GameObject.FindWithTag("GameManager");
 
         if (gameManagerObject != null)
@@ -24,6 +36,7 @@ public class BirdsHealth : MonoBehaviour
         }
         if(gameManagerScript.DefeteadBirds == false)
         {
+        TreeAnimator = GetComponent<Animator>();
         Tree.SetActive(true);
         BrokenTree.SetActive(false);
         CurrentHealth = MaxHealth;
@@ -31,13 +44,16 @@ public class BirdsHealth : MonoBehaviour
         }
         else if(gameManagerScript.DefeteadBirds == true)
         {
-            BrokenTree.SetActive(false);
+            BrokenTree.SetActive(true);
+            Tree.SetActive(false);
         }
 
     }
 
     public void TakeDamage(int Damage)
     {
+        TreeAnimator.SetTrigger("GotHit");
+        damagedParticleScript.SpawnParticle(particlesSpawnPoint.position);
         if(CurrentHealth <= MaxHealth)
         {
              CurrentHealth -= Damage;
@@ -53,6 +69,7 @@ public class BirdsHealth : MonoBehaviour
 
     private void Die()
     {
+        
         birdsController.FlyAwayCoroutine();
 
         Tree.SetActive(false);

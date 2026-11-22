@@ -9,7 +9,7 @@ public class BirdsController : MonoBehaviour
 
     public GameObject[] FeathersSpawners;
 
-    public GameObject limitsColldiers;
+    public GameObject limitsColliders;
 
     public bool CanChooseAttack = true;
 
@@ -132,10 +132,13 @@ public class BirdsController : MonoBehaviour
     public void FlyAwayCoroutine()
     {
         StartCoroutine(FlyAway());
+
+        limitsColliders.SetActive(false);
     }
 
     public IEnumerator FlyAway()
     {
+
         for (int i = 0; i < FeathersSpawners.Length; i++)
         {
             FeathersSpawners[i].SetActive(false);
@@ -144,8 +147,6 @@ public class BirdsController : MonoBehaviour
         BossFightIsOver = true;
 
         animator.SetTrigger("Defeat");
-
-        limitsColldiers.SetActive(false);
 
         yield return new WaitForSeconds(10);
 
@@ -161,7 +162,7 @@ public class BirdsController : MonoBehaviour
     {
         animator.SetBool("StartBossFight", true);
 
-        limitsColldiers.SetActive(true);
+        limitsColliders.SetActive(true);
 
     yield return new WaitForSeconds(5);
 

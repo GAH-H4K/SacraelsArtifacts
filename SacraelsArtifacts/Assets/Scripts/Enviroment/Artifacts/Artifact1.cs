@@ -8,6 +8,8 @@ public class Artifact1 : MonoBehaviour
 
     public GameObject InteractTxt;
 
+    
+
 
     void Start()
     {
