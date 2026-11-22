@@ -12,9 +12,11 @@ public class GameManager : MonoBehaviour
 
     public bool DefeteadBirds = false;
 
-    public bool ColetedFirstArtifact;
+    public bool ColectedFirstArtifact;
 
-    public bool ColetedSecondArtifact;
+    public bool ColectedSecondArtifact;
+
+    public bool ColectedThirdArtifact;
 
     public SavePoint savePointScript;
 
@@ -27,9 +29,12 @@ public class GameManager : MonoBehaviour
 
     private void ResetGame()
     {
-        ColetedSecondArtifact = false;
+        ColectedThirdArtifact = false;
 
-        ColetedFirstArtifact = false;
+        ColectedSecondArtifact = false;
+
+        ColectedFirstArtifact = false;
+
 
         UnlockedHeal = false;
 

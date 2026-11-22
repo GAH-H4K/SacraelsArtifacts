@@ -12,6 +12,8 @@ public class BirdsHealth : MonoBehaviour
 
     public GameObject BrokenTree;
     public GameObject Tree;
+
+    
     void Start()
     {
         GameObject gameManagerObject = GameObject.FindWithTag("GameManager");

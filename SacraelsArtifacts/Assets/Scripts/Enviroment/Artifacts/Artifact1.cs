@@ -18,7 +18,7 @@ public class Artifact1 : MonoBehaviour
             gameManagerScript = gameManagerObject.GetComponent<GameManager>();
         }
 
-        if (gameManagerScript.ColetedSecondArtifact == true)
+        if (gameManagerScript.ColectedSecondArtifact == true)
         {
             Destroy(gameObject);
         }
@@ -41,7 +41,7 @@ public class Artifact1 : MonoBehaviour
 
     public void Collect()
     {
-        gameManagerScript.ColetedSecondArtifact = true;
+        gameManagerScript.ColectedSecondArtifact = true;
         Destroy(gameObject);
     }
 

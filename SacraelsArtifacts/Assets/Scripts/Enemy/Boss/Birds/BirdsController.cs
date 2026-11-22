@@ -9,6 +9,8 @@ public class BirdsController : MonoBehaviour
 
     public GameObject[] FeathersSpawners;
 
+    public GameObject limitsColldiers;
+
     public bool CanChooseAttack = true;
 
     public bool BossFightStarted = false;
@@ -58,8 +60,6 @@ public class BirdsController : MonoBehaviour
         for(int i = 0; i < FeathersSpawners.Length; i++)
         {
             FeathersSpawners[i].SetActive(false);
-
-           
         }
 
       
@@ -95,6 +95,7 @@ public class BirdsController : MonoBehaviour
         animator.SetBool("Idle", false);
 
         CanChooseAttack = true;
+
         Debug.Log("dile");
     }
 
@@ -139,9 +140,15 @@ public class BirdsController : MonoBehaviour
         {
             FeathersSpawners[i].SetActive(false);
         }
+
         BossFightIsOver = true;
+
         animator.SetTrigger("Defeat");
+
+        limitsColldiers.SetActive(false);
+
         yield return new WaitForSeconds(10);
+
         Destroy(gameObject);
     }
 
@@ -154,7 +161,9 @@ public class BirdsController : MonoBehaviour
     {
         animator.SetBool("StartBossFight", true);
 
-        yield return new WaitForSeconds(5);
+        limitsColldiers.SetActive(true);
+
+    yield return new WaitForSeconds(5);
 
         BossFightStarted = true;
     }
