@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class BirdsController : MonoBehaviour
 {
+    public GameManager gameManagerScript;
     public Animator animator;
 
     public GameObject[] FeathersSpawners;
 
     public bool CanChooseAttack = true;
+
+    public bool BossFightStarted = false;
+
+    public bool BossFightIsOver = false;
 
     [Header("CooldownsInsanos")]
 
@@ -21,13 +26,25 @@ public class BirdsController : MonoBehaviour
 
     void Start()
     {
+        GameObject gameManagerObject = GameObject.FindWithTag("GameManager");
+
+        if (gameManagerObject != null)
+        {
+            gameManagerScript = gameManagerObject.GetComponent<GameManager>();
+        }
+
+        if(gameManagerScript.DefeteadBirds == true)
+        {
+            Destroy(gameObject);
+        }
+
         animator = GetComponent<Animator>();
     }
 
     
     void Update()
     {
-        if(CanChooseAttack)
+        if(CanChooseAttack && BossFightStarted && BossFightIsOver == false)
         {
             ChooseAttack();
         }
@@ -42,7 +59,7 @@ public class BirdsController : MonoBehaviour
         {
             FeathersSpawners[i].SetActive(false);
 
-            Debug.Log(i);
+           
         }
 
       
@@ -71,7 +88,7 @@ public class BirdsController : MonoBehaviour
 
         animator.SetBool("Idle", true);
        
-        FeathersSpawners[1].SetActive(true);
+        FeathersSpawners[0].SetActive(true);
 
         yield return new WaitForSeconds(IdleAttackCooldown);
 
@@ -92,7 +109,7 @@ public class BirdsController : MonoBehaviour
         Debug.Log("ar");
         animator.SetBool("AerialAttack", true);
 
-        FeathersSpawners[2].SetActive(true);
+        FeathersSpawners[1].SetActive(true);
 
         yield return new WaitForSeconds(AerialAttackTimer);
 
@@ -111,9 +128,34 @@ public class BirdsController : MonoBehaviour
 
         CanChooseAttack = true;
     }
-
-    public void FlyAway()
+    public void FlyAwayCoroutine()
     {
-       
+        StartCoroutine(FlyAway());
+    }
+
+    public IEnumerator FlyAway()
+    {
+        for (int i = 0; i < FeathersSpawners.Length; i++)
+        {
+            FeathersSpawners[i].SetActive(false);
+        }
+        BossFightIsOver = true;
+        animator.SetTrigger("Defeat");
+        yield return new WaitForSeconds(10);
+        Destroy(gameObject);
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+          StartCoroutine(StartBossFight());
+    }
+
+    private IEnumerator StartBossFight()
+    {
+        animator.SetBool("StartBossFight", true);
+
+        yield return new WaitForSeconds(5);
+
+        BossFightStarted = true;
     }
 }
