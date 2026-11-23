@@ -35,7 +35,7 @@ public class BirdsController : MonoBehaviour
             gameManagerScript = gameManagerObject.GetComponent<GameManager>();
         }
 
-        if(gameManagerScript.DefeteadBirds == true)
+        if (gameManagerScript.DefeteadBirds == true)
         {
             Destroy(gameObject);
         }
@@ -43,10 +43,10 @@ public class BirdsController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    
+
     void Update()
     {
-        if(CanChooseAttack && BossFightStarted && BossFightIsOver == false)
+        if (CanChooseAttack && BossFightStarted && BossFightIsOver == false)
         {
             ChooseAttack();
         }
@@ -57,12 +57,12 @@ public class BirdsController : MonoBehaviour
     {
         CanChooseAttack = false;
 
-        for(int i = 0; i < FeathersSpawners.Length; i++)
+        for (int i = 0; i < FeathersSpawners.Length; i++)
         {
             FeathersSpawners[i].SetActive(false);
         }
 
-      
+
 
         int ChoosedAttack = Random.Range(0, 3);
 
@@ -72,22 +72,22 @@ public class BirdsController : MonoBehaviour
         {
             callAerialAttack();
         }
-        else if(ChoosedAttack == 1)
+        else if (ChoosedAttack == 1)
         {
             StartCoroutine(DashAttack());
         }
-        else if(ChoosedAttack == 2)
+        else if (ChoosedAttack == 2)
         {
             StartCoroutine(IdleAttack());
         }
-        
+
     }
 
     public IEnumerator IdleAttack()
     {
 
         animator.SetBool("Idle", true);
-       
+
         FeathersSpawners[0].SetActive(true);
 
         yield return new WaitForSeconds(IdleAttackCooldown);
@@ -131,9 +131,9 @@ public class BirdsController : MonoBehaviour
     }
     public void FlyAwayCoroutine()
     {
-        StartCoroutine(FlyAway());
-
         limitsColliders.SetActive(false);
+
+        StartCoroutine(FlyAway());
     }
 
     public IEnumerator FlyAway()
@@ -155,7 +155,10 @@ public class BirdsController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-          StartCoroutine(StartBossFight());
+        if (!BossFightStarted)
+        {
+            StartCoroutine(StartBossFight());
+        }
     }
 
     public IEnumerator StartBossFight()

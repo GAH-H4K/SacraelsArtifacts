@@ -367,10 +367,12 @@ MonoBehaviour:
   gameManagerScript: {fileID: 0}
   damagedParticleScript: {fileID: 278578215}
   TreeAnimator: {fileID: 278578214}
+  Died: 0
   MaxHealth: 1000
   CurrentHealth: 0
   BrokenTree: {fileID: 1926646497}
   Tree: {fileID: 1307613928}
+  BossFightConfiner: {fileID: 748558934}
   particlesSpawnPoint: {fileID: 755146532}
 --- !u!60 &278578213
 PolygonCollider2D:

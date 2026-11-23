@@ -18,6 +18,8 @@ public class BirdsHealth : MonoBehaviour
     public GameObject BrokenTree;
     public GameObject Tree;
 
+    public GameObject BossFightConfiner;
+
     public Transform particlesSpawnPoint;
 
 
@@ -69,7 +71,9 @@ public class BirdsHealth : MonoBehaviour
     private void Die()
     {
         Died = true;
-        birdsController.limitsColliders.SetActive(false);
+
+        BossFightConfiner.SetActive(false);
+
         birdsController.FlyAwayCoroutine();
 
         Tree.SetActive(false);
