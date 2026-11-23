@@ -158,7 +158,7 @@ public class BirdsController : MonoBehaviour
         if (!BossFightStarted)
         {
             StartCoroutine(StartBossFight());
-        }
+        }  
     }
 
     public IEnumerator StartBossFight()
