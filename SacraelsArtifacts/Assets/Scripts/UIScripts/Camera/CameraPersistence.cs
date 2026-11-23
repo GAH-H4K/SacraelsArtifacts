@@ -46,6 +46,7 @@ public class CameraPersistence : MonoBehaviour
 
     public void UpdateCameraScale()
     {
+        Debug.Log("oupriasdasd");
         Camera mainCam = Camera.main;
 
         CineCam.Lens.OrthographicSize = mainCam.orthographicSize;
@@ -54,16 +55,19 @@ public class CameraPersistence : MonoBehaviour
 
     public void UpdateCameraBounds(Collider2D newBounds)
     {
+        
         GameObject boundsObject = GameObject.FindWithTag("CameraBounds");
 
         if (boundsObject == null)
         {
+            
             Destroy(gameObject);
             Debug.Log("n tem beirada pra camera seu bobao");
         }
 
         if (confiner2D == null)
         {
+            
             confiner2D = GetComponent<CinemachineConfiner2D>();
         }
 

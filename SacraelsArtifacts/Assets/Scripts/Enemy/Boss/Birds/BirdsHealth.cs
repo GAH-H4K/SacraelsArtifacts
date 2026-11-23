@@ -10,6 +10,8 @@ public class BirdsHealth : MonoBehaviour
 
     public Animator TreeAnimator;
 
+    public bool Died = false;
+
     public int MaxHealth;
     public int CurrentHealth;
 
@@ -17,11 +19,6 @@ public class BirdsHealth : MonoBehaviour
     public GameObject Tree;
 
     public Transform particlesSpawnPoint;
-
-    private void Update()
-    {
-        
-    }
 
 
 
@@ -59,17 +56,20 @@ public class BirdsHealth : MonoBehaviour
              CurrentHealth -= Damage;
         }
 
-        if( CurrentHealth <= 0)
+        if (CurrentHealth <= 0 && Died == false)
         {
             Die();
         }
+        else
+            return;
 
        
     }
 
     private void Die()
     {
-        
+        Died = true;
+        birdsController.limitsColliders.SetActive(false);
         birdsController.FlyAwayCoroutine();
 
         Tree.SetActive(false);

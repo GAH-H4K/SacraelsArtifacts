@@ -542,7 +542,7 @@ MonoBehaviour:
   FeathersSpawners:
   - {fileID: 1560861224}
   - {fileID: 413940102}
-  limitsColldiers: {fileID: 748558934}
+  limitsColliders: {fileID: 748558934}
   CanChooseAttack: 1
   BossFightStarted: 0
   BossFightIsOver: 0

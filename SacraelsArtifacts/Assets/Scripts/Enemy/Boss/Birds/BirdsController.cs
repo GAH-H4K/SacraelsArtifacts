@@ -158,13 +158,13 @@ public class BirdsController : MonoBehaviour
           StartCoroutine(StartBossFight());
     }
 
-    private IEnumerator StartBossFight()
+    public IEnumerator StartBossFight()
     {
         animator.SetBool("StartBossFight", true);
 
         limitsColliders.SetActive(true);
 
-    yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5);
 
         BossFightStarted = true;
     }
