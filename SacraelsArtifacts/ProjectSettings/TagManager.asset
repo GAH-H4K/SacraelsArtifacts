@@ -10,6 +10,7 @@ TagManager:
   - PlayerCanvas
   - GameManager
   - Projectiles
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

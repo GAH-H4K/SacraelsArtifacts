@@ -68,6 +68,13 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        GameObject spawnPointObject = GameObject.FindWithTag("SpawnPoint");
+
+        if(spawnPointObject != null)
+        {
+            savePointScript = spawnPointObject.GetComponent<SavePoint>();
+        }
+
         savePointScript.SavePointScene = scene.name;
     }
 
@@ -80,7 +87,7 @@ public class GameManager : MonoBehaviour
             playerTransform = player.GetComponent<Transform>();
         }
 
-        playerTransform = SaveTransform;
+        playerTransform.position = SaveTransform.position;
 
         SceneManager.LoadScene(SaveScene); 
     }

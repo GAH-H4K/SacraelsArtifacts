@@ -25,11 +25,22 @@ public class SavePoint : MonoBehaviour
     }
 
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E) && CanSave)
+        {
+            SaveSpawnPos();
+        }
+    }
+
+
     public void SaveSpawnPos()
     {
-        SavePointTransform = gameManagerScript.SaveTransform;
+        gameManagerScript.SaveTransform = SavePointTransform;
 
         SavePointScene = SceneManager.GetActiveScene().name;
+
+        gameManagerScript.SaveScene = SavePointScene;
 
         Debug.Log(SavePointScene);
     }
