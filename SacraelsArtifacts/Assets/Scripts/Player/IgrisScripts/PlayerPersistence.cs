@@ -8,7 +8,7 @@ public class PlayerPersistence : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Menu")
+        if(SceneManager.GetActiveScene().name == "Menu" || SceneManager.GetActiveScene().name == "End")
         {
             Destroy(gameObject);
         }

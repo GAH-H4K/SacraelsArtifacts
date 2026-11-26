@@ -32,7 +32,7 @@ public class CameraPersistence : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Menu")
+        if(SceneManager.GetActiveScene().name == "Menu" || SceneManager.GetActiveScene().name == "End")
         {
             Destroy(gameObject);
         }
