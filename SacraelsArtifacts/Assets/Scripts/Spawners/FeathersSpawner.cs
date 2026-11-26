@@ -24,9 +24,9 @@ public class FeathersSpawner : MonoBehaviour
 
     public void Burst()
     {
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 18; i++)
         {
-            GameObject obj = Instantiate(FeatherPrefab, transform.position, Quaternion.Euler(0, 0, i * 45));
+            GameObject obj = Instantiate(FeatherPrefab, transform.position, Quaternion.Euler(0, 0, i * 20));
             obj.GetComponent<Rigidbody2D>().linearVelocity = obj.transform.right * force;
         }
     }
