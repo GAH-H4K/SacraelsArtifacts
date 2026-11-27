@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 6699e93768332384b9e4ff981ef14705
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6525040329332332501
+    second: portal aceso 2_0
+  - first:
+      213: 9066384741234625694
+    second: portal aceso 2_1
+  - first:
+      213: 7617235283901314241
+    second: portal aceso 2_2
+  - first:
+      213: 6965480489130757339
+    second: portal aceso 2_3
+  - first:
+      213: -5277253638781277865
+    second: portal aceso 2_4
+  - first:
+      213: -5489137607496302870
+    second: portal aceso 2_5
+  - first:
+      213: 2330777968736036007
+    second: portal aceso 2_6
+  - first:
+      213: -5754426665318035924
+    second: portal aceso 2_7
+  - first:
+      213: -5781364890097809430
+    second: portal aceso 2_8
+  - first:
+      213: 2092310886438295740
+    second: portal aceso 2_9
+  - first:
+      213: 6894792426636796242
+    second: portal aceso 2_10
+  - first:
+      213: 8271205827078469493
+    second: portal aceso 2_11
+  - first:
+      213: 7379940985411629302
+    second: portal aceso 2_12
+  - first:
+      213: 520686493467542309
+    second: portal aceso 2_13
+  - first:
+      213: 719349003778605687
+    second: portal aceso 2_14
+  - first:
+      213: -4728099425097850526
+    second: portal aceso 2_15
+  - first:
+      213: -8809767943681711851
+    second: portal aceso 2_16
+  - first:
+      213: -4954251356936061344
+    second: portal aceso 2_17
+  - first:
+      213: -9081559731814705998
+    second: portal aceso 2_18
+  - first:
+      213: 7580267621323360160
+    second: portal aceso 2_19
+  - first:
+      213: 233295817899592346
+    second: portal aceso 2_20
+  - first:
+      213: -941664786514494917
+    second: portal aceso 2_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: portal aceso 2_0
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 285
+        width: 3973
+        height: 7582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b286c0144666275a0800000000000000
+      internalID: -6525040329332332501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_1
+      rect:
+        serializedVersion: 2
+        x: 4689
+        y: 7814
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ccf4ae2e442dd70800000000000000
+      internalID: 9066384741234625694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_2
+      rect:
+        serializedVersion: 2
+        x: 4703
+        y: 7808
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c47283022bd5b960800000000000000
+      internalID: 7617235283901314241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_3
+      rect:
+        serializedVersion: 2
+        x: 4707
+        y: 7815
+        width: 160
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc8d84a99b5aa060800000000000000
+      internalID: 6965480489130757339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_4
+      rect:
+        serializedVersion: 2
+        x: 4721
+        y: 7805
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759edce86cd63c6b0800000000000000
+      internalID: -5277253638781277865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_5
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 7807
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeef1fdbd6aa2d3b0800000000000000
+      internalID: -5489137607496302870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_6
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 7801
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a461dca636985020800000000000000
+      internalID: 2330777968736036007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_7
+      rect:
+        serializedVersion: 2
+        x: 4757
+        y: 7797
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ecea7af6b2420b0800000000000000
+      internalID: -5754426665318035924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_8
+      rect:
+        serializedVersion: 2
+        x: 4780
+        y: 7798
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae70ec0734774cfa0800000000000000
+      internalID: -5781364890097809430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_9
+      rect:
+        serializedVersion: 2
+        x: 4770
+        y: 7797
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb856d96aa1690d10800000000000000
+      internalID: 2092310886438295740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_10
+      rect:
+        serializedVersion: 2
+        x: 4783
+        y: 7789
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2516dbd8e293faf50800000000000000
+      internalID: 6894792426636796242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_11
+      rect:
+        serializedVersion: 2
+        x: 4796
+        y: 7789
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577372380e939c270800000000000000
+      internalID: 8271205827078469493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_12
+      rect:
+        serializedVersion: 2
+        x: 4853
+        y: 7776
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f07ec2c931da6660800000000000000
+      internalID: 7379940985411629302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_13
+      rect:
+        serializedVersion: 2
+        x: 4018
+        y: 7699
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5230a7a6b99d93700800000000000000
+      internalID: 520686493467542309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_14
+      rect:
+        serializedVersion: 2
+        x: 4066
+        y: 7701
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77241cf8b14abf900800000000000000
+      internalID: 719349003778605687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_15
+      rect:
+        serializedVersion: 2
+        x: 4143
+        y: 7703
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26160589f9a626eb0800000000000000
+      internalID: -4728099425097850526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_16
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 7706
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5116a3b3bba6db580800000000000000
+      internalID: -8809767943681711851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_17
+      rect:
+        serializedVersion: 2
+        x: 5039
+        y: 305
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e34ddb3a6fe3bb0800000000000000
+      internalID: -4954251356936061344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_18
+      rect:
+        serializedVersion: 2
+        x: 5077
+        y: 303
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b451b24a81d7f180800000000000000
+      internalID: -9081559731814705998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_19
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 306
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7cf575d35823960800000000000000
+      internalID: 7580267621323360160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_20
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 306
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a4d717f45dc3300800000000000000
+      internalID: 233295817899592346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal aceso 2_21
+      rect:
+        serializedVersion: 2
+        x: 5119
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a3f46add88ee2f0800000000000000
+      internalID: -941664786514494917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      portal aceso 2_0: -6525040329332332501
+      portal aceso 2_1: 9066384741234625694
+      portal aceso 2_10: 6894792426636796242
+      portal aceso 2_11: 8271205827078469493
+      portal aceso 2_12: 7379940985411629302
+      portal aceso 2_13: 520686493467542309
+      portal aceso 2_14: 719349003778605687
+      portal aceso 2_15: -4728099425097850526
+      portal aceso 2_16: -8809767943681711851
+      portal aceso 2_17: -4954251356936061344
+      portal aceso 2_18: -9081559731814705998
+      portal aceso 2_19: 7580267621323360160
+      portal aceso 2_2: 7617235283901314241
+      portal aceso 2_20: 233295817899592346
+      portal aceso 2_21: -941664786514494917
+      portal aceso 2_3: 6965480489130757339
+      portal aceso 2_4: -5277253638781277865
+      portal aceso 2_5: -5489137607496302870
+      portal aceso 2_6: 2330777968736036007
+      portal aceso 2_7: -5754426665318035924
+      portal aceso 2_8: -5781364890097809430
+      portal aceso 2_9: 2092310886438295740
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
