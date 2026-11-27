@@ -365,7 +365,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 21.414597, y: -26.569805}
+  m_Offset: {x: 3.9045563, y: -26.569805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -375,7 +375,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 100.064606, y: 24.625717}
+  m_Size: {x: 132.99081, y: 24.625717}
   m_EdgeRadius: 0
 --- !u!1 &362289660
 GameObject:
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 362289662}
   - component: {fileID: 362289661}
   m_Layer: 0
-  m_Name: SceneManager(ToBridge)  (1)
+  m_Name: 'SceneManager(ToTopArea) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2136908c240d9a24f97c770b5168a175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagerScript
-  sceneName: Bridge
+  sceneName: TopArea
 --- !u!61 &362289662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ Transform:
   m_GameObject: {fileID: 362289660}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 456.6, y: -43.49, z: 0}
+  m_LocalPosition: {x: 488, y: -38.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -494,7 +494,7 @@ Transform:
   m_GameObject: {fileID: 611656810}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 289.7, y: -55.1, z: 0}
+  m_LocalPosition: {x: 349.2, y: -51.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1257,20 +1257,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 121318538}
     m_ColliderPaths:
-    - - X: 714468992
+    - - X: 703999616
         Y: -142569472
-      - X: -286177056
+      - X: -625908480
         Y: -142569472
-      - X: -286177056
+      - X: -625908480
         Y: -388826624
-      - X: 714468992
+      - X: 703999616
         Y: -388826624
   m_CompositePaths:
     m_Paths:
-    - - {x: 71.44687, y: -38.882664}
-      - {x: 71.44687, y: -14.2569475}
-      - {x: -28.617706, y: -14.256976}
-      - {x: -28.617678, y: -38.882664}
+    - - {x: 70.39993, y: -38.882664}
+      - {x: 70.39993, y: -14.2569475}
+      - {x: -62.590847, y: -14.256976}
+      - {x: -62.590816, y: -38.882664}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -1600,7 +1600,7 @@ Transform:
   m_GameObject: {fileID: 1903864292}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 457.3, y: -21.7, z: 0}
+  m_LocalPosition: {x: 523.3, y: -18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
